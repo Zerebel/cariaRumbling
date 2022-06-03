@@ -11864,7 +11864,9 @@ textarea.form-control-lg {
     position: absolute;
     top: 100%;
     padding: 0.6rem;
-    right: 1.5%;
+    right: 0.1%;
+    z-index: 9999;
+    cursor: pointer;
   }
 
   .navbar-toggler-icon {
