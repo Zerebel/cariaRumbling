@@ -91,11 +91,15 @@
     <!-- #endregion Slider-->
 
     <!-- #region Navbar -->
-    <nav class="navbar navbar-expand-lg">
-      <div class="container">
-        <a class="navbar-brand" href="#">Navbar</a>
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="images/C1_0001.png" alt="" />
+          <img src="images/R1_0000.png" alt="" />
+          <span id="ambling">ambling</span>
+        </a>
         <button
-          class="navbar-toggler"
+          class="navbar-toggler navbar-toggler-right"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNavDropdown"
@@ -131,10 +135,24 @@
             <li class="nav-item">
               <a class="nav-link" href="#">Register</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item d-none d-sm-block">
               <a class="nav-link" href="#">
                 <i class="fa-solid fa-magnifying-glass"></i
               ></a>
+            </li>
+            <li class="nav-item d-sm-none">
+              <a class="nav-link" href="#">
+                <div class="input-group input-group-sm">
+                  <input
+                    type="text"
+                    class="form-control"
+                    aria-label="Dollar amount (with dot and two decimal places)"
+                  />
+                  <span class="input-group-text">
+                    <i class="fa-solid fa-magnifying-glass"></i
+                  ></span>
+                </div>
+              </a>
             </li>
           </ul>
         </div>
@@ -153,7 +171,11 @@
         <div class="row text-center text-md-left pb-3">
           <!-- Grid column -->
           <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-            <h5 class="text-uppercase mb-4 font-weight-bold">Caria Rumbling</h5>
+            <h5 class="mb-4 font-weight-bold">
+              <a id="footer-brand" href="#">
+                Caria Rumbling Club
+              </a>
+            </h5>
             <p>
               We are a welcoming club with no age restrictions, and non-members
               are invited to come along for four or five walks before joining.
@@ -270,13 +292,8 @@
 
     <!-- #region Scripts links -->
     <script src="/assets/js/custom.js"></script>
-    <script src="/assets/js/popper.min.js"></script>
     <script src="/assets/js/jquery-2.2.4.min.js"></script>
-    <script src="/assets/js/popper.js"></script>
-    <script src="/assets/js/bootstrap.js"></script>
     <script src="/assets/js/bootstrap.min.js"></script>
-    <script src="/assets/js/bootstrap.bundle.js"></script>
-    <script src="/assets/js/bootstrap.bundle.min.js"></script>
     <script src="/assets/js/magnific-popup.js"></script>
     <!-- #endregion -->
   </body>

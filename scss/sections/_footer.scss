@@ -30,4 +30,14 @@
       color: purple;
     }
   }
+
+  h5, h5>a{
+    color: goldenrod;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+  #footer-brand:hover{
+    color: darkgoldenrod;
+  }
 }
