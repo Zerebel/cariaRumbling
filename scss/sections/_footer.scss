@@ -1,0 +1,33 @@
+@use "../components/mixins" as *;
+
+.page-footer {
+  position: relative;
+  font-size: 1.1rem;
+  .container-fluid {
+    position: absolute;
+    top: 20px;
+    @include blurglass;
+  }
+
+  a {
+    text-decoration: none;
+    color: rgb(49, 48, 48);
+    &:hover:hover {
+      color: rgb(6, 6, 6);
+      font-weight: 600;
+    }
+    #facebook {
+      color: blue;
+    }
+    .fa-twitter {
+      color: blueviolet;
+    }
+    .fa-google-plus {
+      color: red;
+    }
+
+    .fa-instagram {
+      color: purple;
+    }
+  }
+}

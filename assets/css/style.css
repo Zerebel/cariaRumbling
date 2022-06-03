@@ -11741,6 +11741,39 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+.page-footer {
+  position: relative;
+  font-size: 1.1rem;
+}
+.page-footer .container-fluid {
+  position: absolute;
+  top: 20px;
+  backdrop-filter: blur(13px) saturate(152%);
+  -webkit-backdrop-filter: blur(13px) saturate(152%);
+  background-color: rgba(233, 226, 214, 0.41);
+  border: 1px solid rgba(209, 213, 219, 0.3);
+}
+.page-footer a {
+  text-decoration: none;
+  color: rgb(49, 48, 48);
+}
+.page-footer a:hover:hover {
+  color: rgb(6, 6, 6);
+  font-weight: 600;
+}
+.page-footer a #facebook {
+  color: blue;
+}
+.page-footer a .fa-twitter {
+  color: blueviolet;
+}
+.page-footer a .fa-google-plus {
+  color: red;
+}
+.page-footer a .fa-instagram {
+  color: purple;
+}
+
 .navbar {
   position: fixed;
   width: 100%;
