@@ -11741,7 +11741,38 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+.navbar {
+  position: fixed;
+  width: 100%;
+  backdrop-filter: blur(2px) saturate(200%);
+  -webkit-backdrop-filter: blur(2px) saturate(200%);
+  background-color: rgba(224, 228, 219, 0.59);
+  border: 1px solid rgba(209, 213, 219, 0.3);
+  font-weight: 500;
+  transition: border-radius 3s ease-in-out;
+}
+.navbar .nav-link {
+  text-transform: uppercase;
+}
+.navbar .nav-link:hover {
+  color: aliceblue;
+}
+
+html:not([data-scroll="0"]) .navbar {
+  left: 16%;
+  top: 2%;
+  width: 70%;
+  border-radius: 15px;
+}
+html:not([data-scroll="0"]) .navbar .nav-link:hover {
+  color: inherit;
+}
+
 /* #region  Carousel styling */
+.carol {
+  position: absolute;
+}
+
 .carousel-item .card-info-1 {
   position: absolute;
   top: 10rem;
