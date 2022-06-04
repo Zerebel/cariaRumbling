@@ -11782,6 +11782,7 @@ textarea.form-control-lg {
   color: darkgoldenrod;
 }
 
+/* #region  Larger screen */
 @media (hover: hover) {
   .navbar {
     backdrop-filter: blur(5px) saturate(200%);
@@ -11828,6 +11829,8 @@ textarea.form-control-lg {
     font-size: larger;
   }
 }
+/* #endregion */
+/* #region  Mobile Devices */
 @media (hover: none) {
   .navbar {
     backdrop-filter: blur(20px) saturate(200%);
@@ -11836,15 +11839,16 @@ textarea.form-control-lg {
     border-radius: 12px 0px 0px 12px;
     border: 1px solid rgba(209, 213, 219, 0.3);
     font-weight: 500;
-    font-size: 5.4vw;
+    font-size: 0.934rem;
+    border-radius: 0em;
   }
 
   .navbar-brand img {
-    width: 25px;
+    width: 1.1rem;
   }
   .navbar-brand #ambling {
     position: absolute;
-    top: 1.32rem;
+    top: 0.903rem;
     color: goldenrod;
     font-weight: 600;
     font-size: larger;
@@ -11867,18 +11871,44 @@ textarea.form-control-lg {
     right: 0.1%;
     z-index: 9999;
     cursor: pointer;
+    border-radius: 0px 0 0 12px;
+  }
+
+  .navbar-toggler {
+    line-height: 1;
+    color: transparent;
+    background-color: transparent;
+    border: none;
+  }
+  .navbar-toggler:hover {
+    text-decoration: none;
+  }
+  .navbar-toggler:hover .navbar-collapse {
+    display: none;
+  }
+  .navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
   }
 
   .navbar-toggler-icon {
     display: inline-block;
-    width: 1.5em;
-    height: 1.5em;
+    width: 0.8em;
+    height: 1.03em;
     vertical-align: middle;
+    background-image: url("/images/arrow-down-wide-short-solid.svg");
+    backdrop-filter: blur(5px) saturate(200%);
+    -webkit-backdrop-filter: blur(5px) saturate(200%);
+    background-color: rgba(242, 238, 230, 0.81);
+    border-radius: 12px;
+    border: 1px solid rgba(209, 213, 219, 0.3);
+    border-radius: 0;
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
   }
 }
+/* #endregion Mobile*/
 /* #region  Carousel styling */
 .carol {
   position: absolute;

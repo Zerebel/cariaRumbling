@@ -1,4 +1,5 @@
 @use "../components/mixins" as *;
+/* #region  Larger screen */
 
 @media (hover: hover) {
   .navbar {
@@ -46,21 +47,24 @@
     }
   }
 }
+/* #endregion */
+
+/* #region  Mobile Devices */
 
 @media (hover: none) {
   .navbar {
     @include blurglass-high;
     font-weight: 500;
-    font-size: 5.4vw;
-
+    font-size: 0.934rem;
+    border-radius: 0em;
   }
   .navbar-brand {
     img {
-      width: 25px;
+      width: 1.1rem;
     }
     #ambling {
       position: absolute;
-      top: 1.32rem;
+      top: 0.903rem;
       color: goldenrod;
       font-weight: 600;
       font-size: larger;
@@ -79,16 +83,46 @@
     right: 0.1%;
     z-index: 9999;
     cursor: pointer;
+    border-radius: 0px 0 0 12px;
   }
+
+  // Button for toggling the navbar when in its collapsed state
+.navbar-toggler {
+  line-height: 1;
+  color: transparent;
+  background-color: transparent; // remove default button style
+  border: none; // remove default button style
+  // @include border-radius(var(--#{$prefix}navbar-toggler-border-radius));
+  // @include transition(var(--#{$prefix}navbar-toggler-transition));
+
+  &:hover {
+    text-decoration: none;
+
+    .navbar-collapse{
+      display: none;
+    }
+  }
+
+  &:focus {
+    text-decoration: none;
+    outline: 0;
+    //box-shadow: 0 0 0 var(--#{$prefix}navbar-toggler-focus-width);
+  }
+
+}
 
   .navbar-toggler-icon {
     display: inline-block;
-    width: 1.5em;
-    height: 1.5em;
+    width: 0.8em;
+    height: 1.03em;
     vertical-align: middle;
-    // background-image: url('/images/');
+    background-image: url('/images/arrow-down-wide-short-solid.svg');
+    @include blurglass-medium;
+    border-radius: 0;
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
   }
 }
+
+/* #endregion Mobile*/
