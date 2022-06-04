@@ -11784,25 +11784,6 @@ textarea.form-control-lg {
   color: darkgoldenrod;
 }
 
-@media (hover: hover) {
-  section.brief-description {
-    position: absolute;
-    top: 21em;
-    font-size: 1.4rem;
-  }
-  section.brief-description #brief-desc {
-    background-image: url(/images/bg.svg);
-  }
-  section.brief-description #brief-desc .card {
-    background-color: transparent;
-  }
-}
-@media (hover: none) {
-  section.brief-description {
-    position: relative;
-    top: 22em;
-  }
-}
 img {
   width: 100%;
   height: 100%;
