@@ -1,8 +1,12 @@
 @use "../components/mixins" as *;
 /* #region  Larger screen */
-
+.html {
+  min-width: 670px;
+  position: relative;
+}
 @media (hover: hover) {
   .navbar {
+    z-index: 1111;
     @include blurglass-medium;
     position: fixed;
     width: 100%;
@@ -26,20 +30,28 @@
   }
 
   html:not([data-scroll="0"]) {
-    .navbar {
-      left: 16%;
-      top: 2%;
-      width: 70%;
-      border-radius: 15px;
-      transition: border-radius 3s ease-in-out;
-      .nav-link {
-        &:hover {
-          color: inherit;
+    @media screen and(min-width:768px) {
+      .navbar {
+        left: 45%;
+        margin-left: -40%;
+        top: 2%;
+        width: 90%;
+        border-radius: 15px;
+        transition: border-radius 3s ease-in-out;
+        .nav-link {
+          &:hover {
+            color: inherit;
+          }
         }
       }
     }
   }
 
+  @media screen and (max-width:992px) {
+    .card{
+      display: none;
+    }
+  }
   .navbar-brand {
     padding-left: 10px;
     img {
@@ -60,10 +72,11 @@
 
 @media (hover: none) {
   .navbar {
-   @include blurglass-low;
+    @include blurglass-low;
     font-weight: 500;
     font-size: 0.934rem;
     border-radius: 0em;
+    z-index: 1111;
   }
   .navbar-brand {
     img {
@@ -152,5 +165,4 @@
     }
   }
 }
-
 /* #endregion Mobile*/

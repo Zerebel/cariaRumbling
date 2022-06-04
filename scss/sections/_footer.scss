@@ -1,8 +1,10 @@
 @use "../components/mixins" as *;
 
 .page-footer {
-  position: relative;
+  position:relative;
   font-size: 1.1rem;
+  top:100em;
+  margin-top: 0.8rem;
   .container-fluid {
     position: absolute;
     top: 20px;
