@@ -7,6 +7,7 @@
     position: fixed;
     width: 100%;
     font-weight: 500;
+    border-radius: 0;
     transition: border-radius 3s ease-in-out;
     padding-right: 20px;
     transition: font-weight 0.5s ease-in;
@@ -19,12 +20,18 @@
     }
   }
 
+  section.carol-mobile {
+    display: none;
+    z-index: -1;
+  }
+
   html:not([data-scroll="0"]) {
     .navbar {
       left: 16%;
       top: 2%;
       width: 70%;
       border-radius: 15px;
+      transition: border-radius 3s ease-in-out;
       .nav-link {
         &:hover {
           color: inherit;
@@ -53,7 +60,7 @@
 
 @media (hover: none) {
   .navbar {
-    @include blurglass-high;
+   @include blurglass-low;
     font-weight: 500;
     font-size: 0.934rem;
     border-radius: 0em;
@@ -68,21 +75,20 @@
       color: goldenrod;
       font-weight: 600;
       font-size: larger;
-      
     }
   }
   section.carol {
     display: none;
     z-index: -1;
   }
-#search-but{
-  border: none;
-  padding: 0;
-  margin: 0;
-  z-index: 990;
-  background-color: inherit;
-  color: inherit;
-}
+  #search-but {
+    border: none;
+    padding: 0;
+    margin: 0;
+    z-index: 990;
+    background-color: inherit;
+    color: inherit;
+  }
   .navbar-collapse {
     @include blurglass-high;
     position: absolute;
@@ -95,25 +101,24 @@
   }
 
   // Button for toggling the navbar when in its collapsed state
-.navbar-toggler {
-  line-height: 1;
-  color: transparent;
-  background-color: transparent; // remove default button style
-  border: none; // remove default button style
-  // @include border-radius(var(--#{$prefix}navbar-toggler-border-radius));
-  // @include transition(var(--#{$prefix}navbar-toggler-transition));
+  .navbar-toggler {
+    line-height: 1;
+    color: transparent;
+    background-color: transparent; // remove default button style
+    border: none; // remove default button style
+    // @include border-radius(var(--#{$prefix}navbar-toggler-border-radius));
+    // @include transition(var(--#{$prefix}navbar-toggler-transition));
 
-  &:hover {
-    text-decoration: none;
+    &:hover {
+      text-decoration: none;
+    }
+
+    &:focus {
+      text-decoration: none;
+      outline: 0;
+      //box-shadow: 0 0 0 var(--#{$prefix}navbar-toggler-focus-width);
+    }
   }
-
-  &:focus {
-    text-decoration: none;
-    outline: 0;
-    //box-shadow: 0 0 0 var(--#{$prefix}navbar-toggler-focus-width);
-  }
-
-}
 
   .navbar-toggler-icon {
     display: inline-block;
@@ -124,6 +129,27 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
+  }
+
+  html:not([data-scroll="0"]) {
+    .navbar {
+      @include blurglass-lower;
+      left: 60%;
+      margin-left: -55%;
+      right: 50%;
+      margin-right: -50%;
+      top: 2%;
+      width: 90%;
+      border-radius: 15px;
+      transition: border-radius 3s ease-in-out;
+      transition: background-color 3s ease-in-out;
+
+      .nav-link {
+        &:hover {
+          color: inherit;
+        }
+      }
+    }
   }
 }
 

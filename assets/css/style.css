@@ -11788,11 +11788,11 @@ textarea.form-control-lg {
     backdrop-filter: blur(5px) saturate(200%);
     -webkit-backdrop-filter: blur(5px) saturate(200%);
     background-color: rgba(242, 238, 230, 0.81);
-    border-radius: 12px;
     border: 1px solid rgba(209, 213, 219, 0.3);
     position: fixed;
     width: 100%;
     font-weight: 500;
+    border-radius: 0;
     transition: border-radius 3s ease-in-out;
     padding-right: 20px;
     transition: font-weight 0.5s ease-in;
@@ -11805,11 +11805,17 @@ textarea.form-control-lg {
     font-weight: 700;
   }
 
+  section.carol-mobile {
+    display: none;
+    z-index: -1;
+  }
+
   html:not([data-scroll="0"]) .navbar {
     left: 16%;
     top: 2%;
     width: 70%;
     border-radius: 15px;
+    transition: border-radius 3s ease-in-out;
   }
   html:not([data-scroll="0"]) .navbar .nav-link:hover {
     color: inherit;
@@ -11833,10 +11839,10 @@ textarea.form-control-lg {
 /* #region  Mobile Devices */
 @media (hover: none) {
   .navbar {
-    backdrop-filter: blur(20px) saturate(200%);
-    -webkit-backdrop-filter: blur(20px) saturate(200%);
-    background-color: rgba(206, 197, 173, 0.93);
-    border-radius: 12px 0px 0px 12px;
+    backdrop-filter: blur(4px) saturate(200%);
+    -webkit-backdrop-filter: blur(4px) saturate(200%);
+    background-color: rgba(245, 189, 103, 0.4);
+    border-radius: 12px;
     border: 1px solid rgba(209, 213, 219, 0.3);
     font-weight: 500;
     font-size: 0.934rem;
@@ -11872,7 +11878,6 @@ textarea.form-control-lg {
     backdrop-filter: blur(20px) saturate(200%);
     -webkit-backdrop-filter: blur(20px) saturate(200%);
     background-color: rgba(206, 197, 173, 0.93);
-    border-radius: 12px 0px 0px 12px;
     border: 1px solid rgba(209, 213, 219, 0.3);
     position: absolute;
     top: 100%;
@@ -11907,14 +11912,33 @@ textarea.form-control-lg {
     background-position: center;
     background-size: 100%;
   }
+
+  html:not([data-scroll="0"]) .navbar {
+    backdrop-filter: blur(20px) saturate(200%);
+    -webkit-backdrop-filter: blur(20px) saturate(200%);
+    background-color: rgba(252, 231, 206, 0.85);
+    border-radius: 12px;
+    border: 1px solid rgba(209, 213, 219, 0.3);
+    left: 60%;
+    margin-left: -55%;
+    right: 50%;
+    margin-right: -50%;
+    top: 2%;
+    width: 90%;
+    border-radius: 15px;
+    transition: border-radius 3s ease-in-out;
+    transition: background-color 3s ease-in-out;
+  }
+  html:not([data-scroll="0"]) .navbar .nav-link:hover {
+    color: inherit;
+  }
 }
 /* #endregion Mobile*/
-/* #region  Carousel styling */
+/* #region  Carousel-1 styling */
 .carol {
   position: absolute;
 }
-
-.carousel-item .card-info-1 {
+.carol .carousel-item .card-info-1 {
   position: absolute;
   top: 10rem;
   left: 3rem;
@@ -11929,7 +11953,7 @@ textarea.form-control-lg {
   font-size: 25px;
   font-weight: 500;
 }
-.carousel-item .card-info-1 a {
+.carol .carousel-item .card-info-1 a {
   color: #fff;
   backdrop-filter: blur(10px) saturate(200%);
   -webkit-backdrop-filter: blur(10px) saturate(200%);
@@ -11937,7 +11961,7 @@ textarea.form-control-lg {
   border-radius: 12px;
   border: 1px solid rgba(209, 213, 219, 0.3);
 }
-.carousel-item .card-info-2 {
+.carol .carousel-item .card-info-2 {
   position: absolute;
   top: 8rem;
   left: 3rem;
@@ -11952,7 +11976,7 @@ textarea.form-control-lg {
   font-size: 20px;
   width: 35rem;
 }
-.carousel-item .card-info-2 a {
+.carol .carousel-item .card-info-2 a {
   color: rgb(73, 72, 72);
   backdrop-filter: blur(9px) saturate(149%);
   -webkit-backdrop-filter: blur(9px) saturate(149%);
@@ -11960,7 +11984,7 @@ textarea.form-control-lg {
   border-radius: 12px;
   border: 1px solid rgba(209, 213, 219, 0.3);
 }
-.carousel-item .card-info-2 a:hover, .carousel-item .card-info-2 a:active {
+.carol .carousel-item .card-info-2 a:hover, .carol .carousel-item .card-info-2 a:active {
   color: #fff;
   backdrop-filter: blur(4px) saturate(200%);
   -webkit-backdrop-filter: blur(4px) saturate(200%);
@@ -11968,7 +11992,7 @@ textarea.form-control-lg {
   border-radius: 12px;
   border: 1px solid rgba(209, 213, 219, 0.3);
 }
-.carousel-item .card-info-3 {
+.carol .carousel-item .card-info-3 {
   position: absolute;
   top: 8rem;
   left: 3rem;
@@ -11983,7 +12007,7 @@ textarea.form-control-lg {
   font-size: 20px;
   width: 35rem;
 }
-.carousel-item .card-info-3 a {
+.carol .carousel-item .card-info-3 a {
   color: rgb(73, 72, 72);
   backdrop-filter: blur(9px) saturate(149%);
   -webkit-backdrop-filter: blur(9px) saturate(149%);
@@ -11991,7 +12015,7 @@ textarea.form-control-lg {
   border-radius: 12px;
   border: 1px solid rgba(209, 213, 219, 0.3);
 }
-.carousel-item .card-info-3 a:hover, .carousel-item .card-info-3 a:active {
+.carol .carousel-item .card-info-3 a:hover, .carol .carousel-item .card-info-3 a:active {
   color: #fff;
   backdrop-filter: blur(12px) saturate(200%);
   -webkit-backdrop-filter: blur(12px) saturate(200%);
@@ -12001,6 +12025,122 @@ textarea.form-control-lg {
 }
 
 /* #endregion */
+/* #region  Carousel-2 styling */
+.carol-mobile {
+  position: absolute;
+}
+.carol-mobile .carousel-item .card-info-1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -50%;
+  margin-top: -20%;
+  color: rgb(255, 255, 255);
+  width: 100%;
+  z-index: 99999;
+  font-size: 1.3rem;
+  font-weight: 800;
+  text-align: center;
+  backdrop-filter: blur(15px) saturate(180%);
+  -webkit-backdrop-filter: blur(15px) saturate(180%);
+  background-color: rgba(185, 236, 117, 0.66);
+  border-radius: 12px;
+  border: 1px solid rgba(209, 213, 219, 0.3);
+}
+.carol-mobile .carousel-item .card-info-1 a {
+  font-weight: bolder;
+  color: rgb(249, 230, 230);
+  backdrop-filter: blur(10px) saturate(200%);
+  -webkit-backdrop-filter: blur(10px) saturate(200%);
+  background-color: rgba(231, 180, 108, 0.4);
+  border-radius: 12px;
+  border: 1px solid rgba(209, 213, 219, 0.3);
+}
+.carol-mobile .carousel-item .card-info-2 {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  margin-left: -50%;
+  margin-top: -20%;
+  color: rgb(255, 255, 255);
+  width: 100%;
+  z-index: 99999;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-align: center;
+  backdrop-filter: blur(0.3px) saturate(149%);
+  -webkit-backdrop-filter: blur(0.5px) saturate(149%);
+  background-color: rgba(197, 229, 238, 0.45);
+  border-radius: 12px;
+  border: 1px solid rgba(209, 213, 219, 0.3);
+}
+.carol-mobile .carousel-item .card-info-2 a {
+  color: rgb(255, 248, 248);
+  backdrop-filter: blur(9px) saturate(149%);
+  -webkit-backdrop-filter: blur(9px) saturate(149%);
+  background-color: rgba(197, 229, 238, 0.44);
+  border-radius: 12px;
+  border: 1px solid rgba(209, 213, 219, 0.3);
+}
+.carol-mobile .carousel-item .card-info-2 a:hover, .carol-mobile .carousel-item .card-info-2 a:active {
+  color: #fff;
+  backdrop-filter: blur(4px) saturate(200%);
+  -webkit-backdrop-filter: blur(4px) saturate(200%);
+  background-color: rgba(62, 82, 231, 0.59);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.carol-mobile .carousel-item .card-info-3 {
+  position: absolute;
+  top: 57%;
+  left: 50%;
+  margin-left: -50%;
+  margin-top: -10%;
+  color: rgb(245, 239, 239);
+  width: 100%;
+  z-index: 99999;
+  font-size: 1.3em;
+  backdrop-filter: blur(4px) saturate(200%);
+  -webkit-backdrop-filter: blur(4px) saturate(200%);
+  background-color: rgba(218, 243, 239, 0.4);
+  border-radius: 12px;
+  border: 1px solid rgba(209, 213, 219, 0.3);
+}
+.carol-mobile .carousel-item .card-info-3 a {
+  color: rgb(255, 253, 253);
+  backdrop-filter: blur(9px) saturate(149%);
+  -webkit-backdrop-filter: blur(9px) saturate(149%);
+  background-color: rgba(9, 182, 230, 0.44);
+  border-radius: 12px;
+  border: 1px solid rgba(209, 213, 219, 0.505);
+}
+.carol-mobile .carousel-item .card-info-3 a:hover, .carol-mobile .carousel-item .card-info-3 a:active {
+  color: #fff;
+  backdrop-filter: blur(12px) saturate(200%);
+  -webkit-backdrop-filter: blur(12px) saturate(200%);
+  background-color: rgba(121, 194, 15, 0.59);
+  border-radius: 12px;
+  border: 1px solid rgba(209, 213, 219, 0.3);
+}
+.carol-mobile .gradient {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: -moz-linear-gradient(left, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%);
+  background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%);
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#e3000000", endColorstr="#e3000000", GradientType=1);
+}
+
+/* #endregion */
+.carousel-indicators li {
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+}
+
 /* #region  Default carousel style change */
 /* #endregion */
 /*!

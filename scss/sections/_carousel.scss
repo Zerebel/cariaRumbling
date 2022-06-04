@@ -1,98 +1,235 @@
-/* #region  Carousel styling */
+@use "../components/mixins" as *;
+/* #region  Carousel-1 styling */
 .carol {
   position: absolute;
-}
-.carousel-item {
-  .card-info-1 {
-    position: absolute;
-    top: 10rem;
-    left: 3rem;
-    text-align: center;
-    backdrop-filter: blur(0px) saturate(141%);
-    -webkit-backdrop-filter: blur(0px) saturate(141%);
-    background-color: rgba(231, 180, 108, 0.15);
-    border-radius: 12px;
-    border: 1px solid rgba(209, 213, 219, 0.3);
-    color: #fff;
-    width: 30rem;
-    font-size: 25px;
-    font-weight: 500;
-    a {
+
+  .carousel-item {
+    .card-info-1 {
+      position: absolute;
+      top: 10rem;
+      left: 3rem;
+      text-align: center;
+      backdrop-filter: blur(0px) saturate(141%);
+      -webkit-backdrop-filter: blur(0px) saturate(141%);
+      background-color: rgba(231, 180, 108, 0.15);
+      border-radius: 12px;
+      border: 1px solid rgba(209, 213, 219, 0.3);
       color: #fff;
-      backdrop-filter: blur(10px) saturate(200%);
-      -webkit-backdrop-filter: blur(10px) saturate(200%);
-      background-color: rgba(231, 180, 108, 0.4);
-      border-radius: 12px;
-      border: 1px solid rgba(209, 213, 219, 0.3);
-    }
-  }
-  .card-info-2 {
-    position: absolute;
-    top: 8rem;
-    left: 3rem;
-    text-align: center;
-    backdrop-filter: blur(0.3px) saturate(149%);
-    -webkit-backdrop-filter: blur(0.5px) saturate(149%);
-    background-color: rgba(197, 229, 238, 0.45);
-    border-radius: 12px;
-    border: 1px solid rgba(209, 213, 219, 0.3);
-    color: rgba(137, 135, 135, 0.976);
-    font-weight: 700;
-    font-size: 20px;
-    width: 35rem;
-    a {
-      color: rgb(73, 72, 72);
-      backdrop-filter: blur(9px) saturate(149%);
-      -webkit-backdrop-filter: blur(9px) saturate(149%);
-      background-color: rgba(197, 229, 238, 0.44);
-      border-radius: 12px;
-      border: 1px solid rgba(209, 213, 219, 0.3);
-      &:hover,
-      &:active {
+      width: 30rem;
+      font-size: 25px;
+      font-weight: 500;
+      a {
         color: #fff;
-        backdrop-filter: blur(4px) saturate(200%);
-        -webkit-backdrop-filter: blur(4px) saturate(200%);
-        background-color: rgba(62, 82, 231, 0.59);
+        backdrop-filter: blur(10px) saturate(200%);
+        -webkit-backdrop-filter: blur(10px) saturate(200%);
+        background-color: rgba(231, 180, 108, 0.4);
         border-radius: 12px;
         border: 1px solid rgba(209, 213, 219, 0.3);
       }
     }
-  }
-  .card-info-3 {
-    position: absolute;
-    top: 8rem;
-    left: 3rem;
-    text-align: center;
-    backdrop-filter: blur(3px) saturate(166%);
-    -webkit-backdrop-filter: blur(3px) saturate(166%);
-    background-color: rgba(164, 231, 62, 0.37);
-    border-radius: 12px;
-    border: 1px solid rgba(209, 213, 219, 0.3);
-    color: rgba(248, 242, 242, 0.976);
-    font-weight: 700;
-    font-size: 20px;
-    width: 35rem;
-    a {
-      color: rgb(73, 72, 72);
-      backdrop-filter: blur(9px) saturate(149%);
-      -webkit-backdrop-filter: blur(9px) saturate(149%);
-      background-color: rgba(197, 229, 238, 0.44);
+    .card-info-2 {
+      position: absolute;
+      top: 8rem;
+      left: 3rem;
+      text-align: center;
+      backdrop-filter: blur(0.3px) saturate(149%);
+      -webkit-backdrop-filter: blur(0.5px) saturate(149%);
+      background-color: rgba(197, 229, 238, 0.45);
       border-radius: 12px;
       border: 1px solid rgba(209, 213, 219, 0.3);
-      &:hover,
-      &:active {
-        color: #fff;
-        backdrop-filter: blur(12px) saturate(200%);
-        -webkit-backdrop-filter: blur(12px) saturate(200%);
-        background-color: rgba(121, 194, 15, 0.59);
+      color: rgba(137, 135, 135, 0.976);
+      font-weight: 700;
+      font-size: 20px;
+      width: 35rem;
+      a {
+        color: rgb(73, 72, 72);
+        backdrop-filter: blur(9px) saturate(149%);
+        -webkit-backdrop-filter: blur(9px) saturate(149%);
+        background-color: rgba(197, 229, 238, 0.44);
         border-radius: 12px;
         border: 1px solid rgba(209, 213, 219, 0.3);
+        &:hover,
+        &:active {
+          color: #fff;
+          backdrop-filter: blur(4px) saturate(200%);
+          -webkit-backdrop-filter: blur(4px) saturate(200%);
+          background-color: rgba(62, 82, 231, 0.59);
+          border-radius: 12px;
+          border: 1px solid rgba(209, 213, 219, 0.3);
+        }
+      }
+    }
+    .card-info-3 {
+      position: absolute;
+      top: 8rem;
+      left: 3rem;
+      text-align: center;
+      backdrop-filter: blur(3px) saturate(166%);
+      -webkit-backdrop-filter: blur(3px) saturate(166%);
+      background-color: rgba(164, 231, 62, 0.37);
+      border-radius: 12px;
+      border: 1px solid rgba(209, 213, 219, 0.3);
+      color: rgba(248, 242, 242, 0.976);
+      font-weight: 700;
+      font-size: 20px;
+      width: 35rem;
+      a {
+        color: rgb(73, 72, 72);
+        backdrop-filter: blur(9px) saturate(149%);
+        -webkit-backdrop-filter: blur(9px) saturate(149%);
+        background-color: rgba(197, 229, 238, 0.44);
+        border-radius: 12px;
+        border: 1px solid rgba(209, 213, 219, 0.3);
+        &:hover,
+        &:active {
+          color: #fff;
+          backdrop-filter: blur(12px) saturate(200%);
+          -webkit-backdrop-filter: blur(12px) saturate(200%);
+          background-color: rgba(121, 194, 15, 0.59);
+          border-radius: 12px;
+          border: 1px solid rgba(209, 213, 219, 0.3);
+        }
       }
     }
   }
 }
 /* #endregion */
 
+/* #region  Carousel-2 styling */
+.carol-mobile {
+  position: absolute;
+
+  .carousel-item {
+    .card-info-1 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-left: -50%;
+      margin-top: -20%;
+      color: rgb(255, 255, 255);
+      width: 100%;
+      z-index: 99999;
+      font-size: 1.3rem;
+      font-weight: 800;
+      text-align: center;
+      backdrop-filter: blur(15px) saturate(180%);
+      -webkit-backdrop-filter: blur(15px) saturate(180%);
+      background-color: rgba(185, 236, 117, 0.66);
+      border-radius: 12px;
+      border: 1px solid rgba(209, 213, 219, 0.3);
+
+      a {
+        font-weight: bolder;
+        color: rgb(249, 230, 230);
+        backdrop-filter: blur(10px) saturate(200%);
+        -webkit-backdrop-filter: blur(10px) saturate(200%);
+        background-color: rgba(231, 180, 108, 0.4);
+        border-radius: 12px;
+        border: 1px solid rgba(209, 213, 219, 0.3);
+      }
+    }
+    .card-info-2 {
+      position: absolute;
+      top: 60%;
+      left: 50%;
+      margin-left: -50%;
+      margin-top: -20%;
+      color: rgb(255, 255, 255);
+      width: 100%;
+      z-index: 99999;
+      font-size: 1.2rem;
+      font-weight: 600;
+      text-align: center;
+      backdrop-filter: blur(0.3px) saturate(149%);
+      -webkit-backdrop-filter: blur(0.5px) saturate(149%);
+      background-color: rgba(197, 229, 238, 0.45);
+      border-radius: 12px;
+      border: 1px solid rgba(209, 213, 219, 0.3);
+      a {
+        color: rgb(255, 248, 248);
+        backdrop-filter: blur(9px) saturate(149%);
+        -webkit-backdrop-filter: blur(9px) saturate(149%);
+        background-color: rgba(197, 229, 238, 0.44);
+        border-radius: 12px;
+        border: 1px solid rgba(209, 213, 219, 0.3);
+        &:hover,
+        &:active {
+          color: #fff;
+          backdrop-filter: blur(4px) saturate(200%);
+          -webkit-backdrop-filter: blur(4px) saturate(200%);
+          background-color: rgba(62, 82, 231, 0.59);
+          border-radius: 12px;
+          border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+      }
+    }
+    .card-info-3 {
+      position: absolute;
+      top: 57%;
+      left: 50%;
+      margin-left: -50%;
+      margin-top: -10%;
+      color: rgb(245, 239, 239);
+      width: 100%;
+      z-index: 99999;
+      font-size: 1.3em;
+      backdrop-filter: blur(4px) saturate(200%);
+      -webkit-backdrop-filter: blur(4px) saturate(200%);
+      background-color: rgba(218, 243, 239, 0.4);
+      border-radius: 12px;
+      border: 1px solid rgba(209, 213, 219, 0.3);
+
+      a {
+        color: rgb(255, 253, 253);
+        backdrop-filter: blur(9px) saturate(149%);
+        -webkit-backdrop-filter: blur(9px) saturate(149%);
+        background-color: rgba(9, 182, 230, 0.44);
+        border-radius: 12px;
+        border: 1px solid rgba(209, 213, 219, 0.505);
+        &:hover,
+        &:active {
+          color: #fff;
+          backdrop-filter: blur(12px) saturate(200%);
+          -webkit-backdrop-filter: blur(12px) saturate(200%);
+          background-color: rgba(121, 194, 15, 0.59);
+          border-radius: 12px;
+          border: 1px solid rgba(209, 213, 219, 0.3);
+        }
+      }
+    }
+  }
+
+  .gradient {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: -moz-linear-gradient(
+      left,
+      rgba(0, 0, 0, 0.4) 0%,
+      rgba(0, 0, 0, 0.4) 100%
+    );
+    background: -webkit-linear-gradient(
+      left,
+      rgba(0, 0, 0, 0.4) 0%,
+      rgba(0, 0, 0, 0.4) 100%
+    );
+    background: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.4) 0%,
+      rgba(0, 0, 0, 0.4) 100%
+    );
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e3000000', endColorstr='#e3000000', GradientType=1);
+  }
+}
+/* #endregion */
+
+.carousel-indicators li {
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+}
 /* #region  Default carousel style change */
 $carousel-control-color: white;
 $carousel-control-width: 15%;
@@ -101,7 +238,7 @@ $carousel-control-hover-opacity: 0.9;
 $carousel-control-transition: opacity 0.15s ease;
 
 $carousel-indicator-width: 30px;
-$carousel-indicator-height: 3px;
+$carousel-indicator-height: 30px;
 $carousel-indicator-hit-area-height: 10px;
 $carousel-indicator-spacer: 3px;
 $carousel-indicator-opacity: 0.5;
