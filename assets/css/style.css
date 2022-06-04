@@ -11899,15 +11899,9 @@ textarea.form-control-lg {
 
   .navbar-toggler-icon {
     display: inline-block;
-    width: 0.8em;
-    height: 1.03em;
+    width: 1.3em;
+    height: 1.43em;
     vertical-align: middle;
-    background-image: url("/images/arrow-down-wide-short-solid.svg");
-    backdrop-filter: blur(5px) saturate(200%);
-    -webkit-backdrop-filter: blur(5px) saturate(200%);
-    background-color: rgba(242, 238, 230, 0.81);
-    border-radius: 12px;
-    border: 1px solid rgba(209, 213, 219, 0.3);
     border-radius: 0;
     background-repeat: no-repeat;
     background-position: center;
