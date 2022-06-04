@@ -11859,6 +11859,15 @@ textarea.form-control-lg {
     z-index: -1;
   }
 
+  #search-but {
+    border: none;
+    padding: 0;
+    margin: 0;
+    z-index: 990;
+    background-color: inherit;
+    color: inherit;
+  }
+
   .navbar-collapse {
     backdrop-filter: blur(20px) saturate(200%);
     -webkit-backdrop-filter: blur(20px) saturate(200%);
@@ -11882,9 +11891,6 @@ textarea.form-control-lg {
   }
   .navbar-toggler:hover {
     text-decoration: none;
-  }
-  .navbar-toggler:hover .navbar-collapse {
-    display: none;
   }
   .navbar-toggler:focus {
     text-decoration: none;

@@ -28,23 +28,3 @@ document.addEventListener("scroll", debounce(storeScroll), { passive: true });
 
 // Update scroll position for first time
 storeScroll();
-
-//collapse menu automatically on mobile devices
-const mediaQuery = window.matchMedia("(max-width: 576px)");
-const navid = document.getElementById("navbarNavDropdown"); 
-function displayNavitems(e) {
-if (e.matches) {
-    console.log("This is a moblie");
-}
-
-else{
-  console.log("probably a laptop")
-}
-
-
-}
-// Register event listener
-mediaQuery.addListener(displayNavitems);
-
-// Initial check
-displayNavitems(mediaQuery);
