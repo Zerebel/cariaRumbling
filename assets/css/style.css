@@ -12088,9 +12088,6 @@ img {
 
 /* #endregion */
 /* #region  Carousel-2 styling */
-.carol-mobile {
-  position: relative;
-}
 .carol-mobile .carousel-item .card-info-1 {
   position: absolute;
   top: 50%;
