@@ -1,9 +1,5 @@
 @use "../components/mixins" as *;
 /* #region  Larger screen */
-.html {
-  min-width: 670px;
-  position: relative;
-}
 @media (hover: hover) {
   .navbar {
     z-index: 1111;
