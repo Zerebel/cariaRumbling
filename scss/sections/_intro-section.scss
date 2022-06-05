@@ -1,14 +1,6 @@
 @use "../components/mixins" as *;
 
 /* #region  large screen header */
-header {
-  display: flow-root;
-  position: absolute;
-  height: max-content;
-  width: 100%;
-  z-index: 9999;
-}
-
 .intro-sec {
   img {
     width: 100%;
@@ -22,7 +14,6 @@ header {
   .intro-sec {
     height: max-content;
     width: 100%;
-   
   }
   .blog-info {
     @include blurglass;
@@ -36,14 +27,11 @@ header {
 @media (hover: none) {
   @media screen and(max-width:768px) {
     .intro-sec {
-      
       height: max-content;
       width: 100%;
-      top: 51.55%;
     }
   }
   .blog-info {
- 
     @include blurglass;
     border-radius: 0;
   }

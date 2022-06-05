@@ -43,8 +43,8 @@
     }
   }
 
-  @media screen and (max-width:992px) {
-    .card{
+  @media screen and (max-width: 992px) {
+    .card {
       display: none;
     }
   }
@@ -132,7 +132,7 @@
   .navbar-toggler-icon {
     display: inline-block;
     max-width: 1.3em;
-  max-height: 1.43em;
+    max-height: 1.43em;
     vertical-align: middle;
     border-radius: 0;
     background-repeat: no-repeat;
