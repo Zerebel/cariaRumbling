@@ -11873,7 +11873,7 @@ img {
   }
 }
 @media screen and (hover: hover) and (max-width: 992px) {
-  .card {
+  .carol .card {
     display: none;
   }
 }
