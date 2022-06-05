@@ -1,10 +1,17 @@
 @use "../components/mixins" as *;
-
+@media (hover: none) {
+  .page-footer {
+    position: absolute;
+    top: 140em;
+  }
+}
 .page-footer {
-  position:relative;
+  @media (hover: hover) {
+    position: relative;
+
+    top: 100em;
+  }
   font-size: 1.1rem;
-  top:100em;
-  margin-top: 0.8rem;
   .container-fluid {
     position: absolute;
     top: 20px;
@@ -33,13 +40,14 @@
     }
   }
 
-  h5, h5>a{
+  h5,
+  h5 > a {
     color: goldenrod;
     font-weight: 600;
     text-transform: uppercase;
   }
 
-  #footer-brand:hover{
+  #footer-brand:hover {
     color: darkgoldenrod;
   }
 }

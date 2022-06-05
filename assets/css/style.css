@@ -11741,11 +11741,20 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+@media (hover: none) {
+  .page-footer {
+    position: absolute;
+    top: 140em;
+  }
+}
 .page-footer {
-  position: relative;
   font-size: 1.1rem;
-  top: 100em;
-  margin-top: 0.8rem;
+}
+@media (hover: hover) {
+  .page-footer {
+    position: relative;
+    top: 100em;
+  }
 }
 .page-footer .container-fluid {
   position: absolute;
@@ -11775,7 +11784,8 @@ textarea.form-control-lg {
 .page-footer a .fa-instagram {
   color: purple;
 }
-.page-footer h5, .page-footer h5 > a {
+.page-footer h5,
+.page-footer h5 > a {
   color: goldenrod;
   font-weight: 600;
   text-transform: uppercase;
@@ -11784,6 +11794,7 @@ textarea.form-control-lg {
   color: darkgoldenrod;
 }
 
+/* #region  large screen header */
 header {
   display: flow-root;
   position: absolute;
@@ -11810,13 +11821,35 @@ header {
     width: 100%;
     top: 71%;
   }
+
+  .blog-info {
+    position: absolute;
+    top: 122%;
+    backdrop-filter: blur(13px) saturate(152%);
+    -webkit-backdrop-filter: blur(13px) saturate(152%);
+    background-color: rgba(233, 226, 214, 0.41);
+    border: 1px solid rgba(209, 213, 219, 0.3);
+    border-radius: 0;
+  }
 }
+/* #endregion large headr */
 @media screen and (hover: none) and (max-width: 768px) {
   .intro-sec {
     position: absolute;
     height: max-content;
     width: 100%;
     top: 51.55%;
+  }
+}
+@media (hover: none) {
+  .blog-info {
+    position: absolute;
+    top: 90%;
+    backdrop-filter: blur(13px) saturate(152%);
+    -webkit-backdrop-filter: blur(13px) saturate(152%);
+    background-color: rgba(233, 226, 214, 0.41);
+    border: 1px solid rgba(209, 213, 219, 0.3);
+    border-radius: 0;
   }
 }
 img {

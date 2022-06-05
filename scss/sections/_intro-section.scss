@@ -1,6 +1,7 @@
-@use '../components/mixins' as *;
+@use "../components/mixins" as *;
 
-header{
+/* #region  large screen header */
+header {
   display: flow-root;
   position: absolute;
   height: max-content;
@@ -8,43 +9,52 @@ header{
   z-index: 9999;
 }
 
-.intro-sec{
-  img{
+.intro-sec {
+  img {
     width: 100%;
     height: 100%;
   }
-@include blurglass;
+  @include blurglass;
 }
-@media(hover:hover){
-@media screen and(min-width:768px) {
-
+@media (hover: hover) {
+  @media screen and(min-width:768px) {
+  }
+  .intro-sec {
+    position: absolute;
+    height: max-content;
+    width: 100%;
+    top: 71%;
+  }
+  .blog-info {
+    position: absolute;
+    top: 122%;
+    @include blurglass;
+    border-radius: 0;
+  }
 }
-.intro-sec{
-  position: absolute;
-  height: max-content;
-  width: 100%;
-  top: 71%;
+/* #endregion large headr */
+
+@media (hover: hover) {
+}
+@media (hover: none) {
+  @media screen and(max-width:768px) {
+    .intro-sec {
+      position: absolute;
+      height: max-content;
+      width: 100%;
+      top: 51.55%;
+    }
+  }
+  .blog-info {
+    position: absolute;
+    top: 90%;
+    @include blurglass;
+    border-radius: 0;
+  }
 }
 
-
-}
-
-
-@media(hover:none){
-@media screen and(max-width:768px) {
-.intro-sec{
-  position: absolute;
-  height: max-content;
-  width: 100%;
-  top: 51.55%;
-}
-
-}
-}
-
-img{
+img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-
