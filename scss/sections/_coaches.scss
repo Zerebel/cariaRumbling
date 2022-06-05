@@ -1,0 +1,6 @@
+@use '../components/mixins' as *;
+
+
+  .coaches{
+    @include blurglass;
+  }
