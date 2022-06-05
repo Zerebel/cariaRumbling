@@ -10,7 +10,7 @@
     />
     <meta name="generator" content="Caria Rambling" />
     <title>Caria Rambling Club</title>
-    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
     <!-- #region Css Links -->
     <link rel="stylesheet" href="assets/css/style.css" />
     <link
@@ -259,9 +259,11 @@
         Insights
       </p>
 
-      <div class="container d-flex justify-content-between flex-wrap row-insights">
-        <div class="card mb-3 ">
-          <div class="row g-0 col-card ">
+      <div
+        class="container d-flex justify-content-between flex-wrap row-insights"
+      >
+        <div class="card mb-3">
+          <div class="row g-0 col-card">
             <div class="col-md-6 col-img">
               <img
                 src="/images/walking-route-route-2.jpg"
@@ -369,26 +371,105 @@
     <!-- #endregion walks -->
 
     <!-- #region Coaches -->
-    <section class="coaches">
+    <!-- <section class="coaches">
       <p class="text-warning pt-2 text-center text-uppercase fs-1 fw-bold">
         Our Coaches
       </p>
+      <div class="card bg-dark text-white fs-3">
+  <img src="images/carol2.jpg" class="card-img img-fluid" alt="...">
+  <div class="card-img-overlay">
+    <h3 class="card-title text-break text-warning">Why Coaches?</h3>
+    <p class="card-text">This is a wider card with supporting <h6>text below as a natural lead-in to additional content. This content</h6> is a little bit longer.</p>
+    <p class="card-text">Last updated 3 mins ago</p>
+  </div>
+</div>
 
+    </section> -->
+    <!-- #endregion coaches-->
 
-    </section>
-    <!-- #endregion caoches-->
-   
-    <!-- #region Coaches -->
+    <!-- #region testimonial -->
     <section class="testimonials">
       <p class="text-warning pt-2 text-center text-uppercase fs-1 fw-bold">
         Our members Say
       </p>
-
-
+      <div class="container" id="featureContainer">
+        <div class="row mx-auto my-auto justify-content-center">
+          <div id="feature" class="carousel slide" data-bs-ride="carousel">
+            <!-- Carousel Items -->
+            <div class="carousel-inner" role="listbox">
+              <div class="carousel-item active">
+                <div class="col-md-4">
+                  <div class="card">
+                    <div class="card-img">
+                      <img
+                        src="images/instagram-post.png"
+                        class="img-fluid w-100"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-md-4">
+                  <div class="card">
+                    <div class="card-img">
+                      <img
+                        src="images/instagram-post-3.png"
+                        class="img-fluid w-100"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-md-4">
+                  <div class="card">
+                    <div class="card-img">
+                      <img
+                        src="images/instagram-post-2.png"
+                        class="img-fluid"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-md-4">
+                  <div class="card">
+                    <div class="card-img">
+                      <img
+                        src="images/instagram-post-4.png"
+                        class="img-fluid"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
-    <!-- #endregion caoches-->
-    
+    <!-- #endregion testimonial-->
 
+    <div class="container px-5 pt-3 newsletter d-flex justify-content-center">
+      <div class="input-group mb-3">
+        <input
+          type="email"
+          class="form-control"
+          placeholder="Enter email"
+          aria-label="Recipient's username"
+          aria-describedby="Newsletter_subscription_Email"
+        />
+        <button
+          class="btn btn-warning text-white fw-bolder"
+          type="button"
+          id="Newsletter_subscription_Email"
+        >
+          Subscribe
+        </button>
+      </div>
+    </div>
 
     <!-- #region Footer Start -->
 

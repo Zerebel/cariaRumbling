@@ -28,3 +28,4 @@ document.addEventListener("scroll", debounce(storeScroll), { passive: true });
 
 // Update scroll position for first time
 storeScroll();
+
