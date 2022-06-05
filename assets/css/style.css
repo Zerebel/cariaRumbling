@@ -11741,24 +11741,12 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-@media (hover: none) {
-  .page-footer {
-    position: absolute;
-    top: 140em;
-  }
-}
 .page-footer {
+  background-image: url(/images/wave.svg);
+  background-repeat: no-repeat;
   font-size: 1.1rem;
 }
-@media (hover: hover) {
-  .page-footer {
-    position: relative;
-    top: 100em;
-  }
-}
 .page-footer .container-fluid {
-  position: absolute;
-  top: 20px;
   backdrop-filter: blur(13px) saturate(152%);
   -webkit-backdrop-filter: blur(13px) saturate(152%);
   background-color: rgba(233, 226, 214, 0.41);
@@ -11816,15 +11804,11 @@ header {
 
 @media (hover: hover) {
   .intro-sec {
-    position: absolute;
     height: max-content;
     width: 100%;
-    top: 71%;
   }
 
   .blog-info {
-    position: absolute;
-    top: 122%;
     backdrop-filter: blur(13px) saturate(152%);
     -webkit-backdrop-filter: blur(13px) saturate(152%);
     background-color: rgba(233, 226, 214, 0.41);
@@ -11835,7 +11819,6 @@ header {
 /* #endregion large headr */
 @media screen and (hover: none) and (max-width: 768px) {
   .intro-sec {
-    position: absolute;
     height: max-content;
     width: 100%;
     top: 51.55%;
@@ -11843,8 +11826,6 @@ header {
 }
 @media (hover: none) {
   .blog-info {
-    position: absolute;
-    top: 90%;
     backdrop-filter: blur(13px) saturate(152%);
     -webkit-backdrop-filter: blur(13px) saturate(152%);
     background-color: rgba(233, 226, 214, 0.41);
@@ -11990,8 +11971,8 @@ img {
 
   .navbar-toggler-icon {
     display: inline-block;
-    width: 1.3em;
-    height: 1.43em;
+    max-width: 1.3em;
+    max-height: 1.43em;
     vertical-align: middle;
     border-radius: 0;
     background-repeat: no-repeat;
@@ -12021,9 +12002,6 @@ img {
 }
 /* #endregion Mobile*/
 /* #region  Carousel-1 styling */
-.carol {
-  position: absolute;
-}
 .carol .carousel-item .card-info-1 {
   position: absolute;
   top: 10rem;
@@ -12113,7 +12091,7 @@ img {
 /* #endregion */
 /* #region  Carousel-2 styling */
 .carol-mobile {
-  position: absolute;
+  position: relative;
 }
 .carol-mobile .carousel-item .card-info-1 {
   position: absolute;
@@ -12233,12 +12211,6 @@ img {
   width: 20px;
   height: 20px;
   border-radius: 100%;
-}
-
-/* #region  Default carousel style change */
-/* #endregion */
-.carousel {
-  z-index: 1100;
 }
 
 /*!

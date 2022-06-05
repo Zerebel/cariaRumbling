@@ -1,20 +1,15 @@
 @use "../components/mixins" as *;
 @media (hover: none) {
-  .page-footer {
-    position: absolute;
-    top: 140em;
-  }
+
 }
 .page-footer {
   @media (hover: hover) {
-    position: relative;
-
-    top: 100em;
-  }
+   
+} 
+background-image: url(/images/wave.svg);
+background-repeat: no-repeat;
   font-size: 1.1rem;
   .container-fluid {
-    position: absolute;
-    top: 20px;
     @include blurglass;
   }
 

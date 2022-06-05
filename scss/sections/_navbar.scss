@@ -131,8 +131,8 @@
 
   .navbar-toggler-icon {
     display: inline-block;
-    width: 1.3em;
-    height: 1.43em;
+    max-width: 1.3em;
+  max-height: 1.43em;
     vertical-align: middle;
     border-radius: 0;
     background-repeat: no-repeat;

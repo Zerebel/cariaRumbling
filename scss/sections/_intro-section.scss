@@ -20,14 +20,11 @@ header {
   @media screen and(min-width:768px) {
   }
   .intro-sec {
-    position: absolute;
     height: max-content;
     width: 100%;
-    top: 71%;
+   
   }
   .blog-info {
-    position: absolute;
-    top: 122%;
     @include blurglass;
     border-radius: 0;
   }
@@ -39,15 +36,14 @@ header {
 @media (hover: none) {
   @media screen and(max-width:768px) {
     .intro-sec {
-      position: absolute;
+      
       height: max-content;
       width: 100%;
       top: 51.55%;
     }
   }
   .blog-info {
-    position: absolute;
-    top: 90%;
+ 
     @include blurglass;
     border-radius: 0;
   }
