@@ -71,18 +71,22 @@
               ></a>
             </li>
             <li class="nav-item d-sm-none">
-              <button class="nav-link" id="search-but">
-                <form class="input-group input-group-sm">
-                  <input
-                    type="text"
-                    class="form-control"
-                    aria-label="Email address field"
-                  />
-                  <span class="input-group-text">
-                    <a> <i class="fa-solid fa-magnifying-glass"></i></a
-                  ></span>
-                </form>
-              </button>
+              <div class="input-group mb-2">
+                <input
+                  type="text"
+                  class="form-control form-control-sm"
+                  placeholder="Search"
+                  aria-label="Search"
+                  aria-describedby="Search-on-page"
+                />
+                <button
+                  class="btn btn-warning"
+                  type="button"
+                  id="Search-on-page"
+                >
+                  <i class="fa fa-search search-btn" aria-hidden="true"></i>
+                </button>
+              </div>
             </li>
           </ul>
         </div>
