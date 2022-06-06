@@ -12339,7 +12339,7 @@ img {
     text-align: center;
   }
 }
-.insights a {
+.insights a .btn {
   text-decoration: none;
   color: #fff;
 }
