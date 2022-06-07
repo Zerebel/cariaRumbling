@@ -11741,6 +11741,59 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+.top-page .head-img h2 {
+  position: absolute;
+  top: 6rem;
+  left: 50%;
+  margin-right: -50%;
+  right: 50%;
+}
+
+article .blog-area ul {
+  padding: 0;
+  display: inline-flex;
+  gap: 1.3rem;
+}
+article .blog-area ul li {
+  list-style: none;
+}
+article .blog-area ul li a {
+  text-decoration: none;
+  color: #636060;
+}
+article .blog-area .blog-item-img {
+  position: relative;
+}
+article .blog-area .blog-item-img .blog-item-date {
+  position: absolute;
+  backdrop-filter: blur(4px) saturate(200%);
+  -webkit-backdrop-filter: blur(4px) saturate(200%);
+  background-color: rgba(245, 189, 103, 0.4);
+  border-radius: 12px;
+  border: 1px solid rgba(209, 213, 219, 0.3);
+  display: block;
+  width: max-content;
+  bottom: -1rem;
+  left: 1.5rem;
+  padding: 0.8rem 1.7rem;
+  border-radius: 0.7rem;
+}
+article .blog-area .blog-item-img .blog-item-date a {
+  font-weight: 700;
+  font-size: 1.6rem;
+  color: white;
+  text-decoration: none;
+}
+article .blog-area .blog-item-img .blog-item-date a h4 {
+  padding-bottom: 0;
+  margin: 0;
+}
+article .blog-area .blog-item-img .blog-item-date a p {
+  padding-top: 0;
+  margin-top: 0;
+  color: gold;
+}
+
 @media (hover: hover) {
   .newsletter .input-group {
     width: 50%;
