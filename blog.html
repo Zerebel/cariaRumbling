@@ -45,12 +45,10 @@
         >
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html"
-                >Home</a
-              >
+              <a class="nav-link" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Blog</a>
+              <a class="nav-link active" aria-current="page" href="#">Blog</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Current Programme</a>
@@ -106,10 +104,9 @@
     </div>
     <div class="container">
       <div class="row">
+        <!-- #region Left Column -->
         <div class="col-md-8">
           <div class="row justify-content-md-center py-3">
-
-
             <!-- First Article -->
             <article class="blog blog-area-1" id="blog-area-1">
               <div class="col blog-area">
@@ -159,7 +156,7 @@
                   </li>
                   <div class="vr"></div>
                   <li>
-                    <a href="#"><i class="fa fa-comments"></i> 03 Comments</a>
+                    <a href="#"><i class="fa fa-comments"></i> 53 Comments</a>
                   </li>
                 </ul>
               </div>
@@ -206,11 +203,13 @@
                 </div>
                 <ul class="blog-info-link">
                   <li>
-                    <a href="#"><i class="fa fa-person"></i> Members, Pathways</a>
+                    <a href="#"
+                      ><i class="fa fa-person"></i> Members, Join Us</a
+                    >
                   </li>
                   <div class="vr"></div>
                   <li>
-                    <a href="#"><i class="fa fa-comments"></i> 03 Comments</a>
+                    <a href="#"><i class="fa fa-comments"></i> 19 Comments</a>
                   </li>
                 </ul>
               </div>
@@ -257,16 +256,17 @@
                 </div>
                 <ul class="blog-info-link">
                   <li>
-                    <a href="#"><i class="fa fa-road"></i> Routes, Pathways</a>
+                    <a href="#"
+                      ><i class="fa fa-people-group"></i> People, Group</a
+                    >
                   </li>
                   <div class="vr"></div>
                   <li>
-                    <a href="#"><i class="fa fa-comments"></i> 03 Comments</a>
+                    <a href="#"><i class="fa fa-comments"></i> 21 Comments</a>
                   </li>
                 </ul>
               </div>
             </article>
-
 
             <!-- Forth article -->
             <article class="blog blog-area-4" id="blog-area-4">
@@ -282,8 +282,8 @@
                 </div>
                 <div class="blog-item-cap container mt-3">
                   <h4>
-                   Find Out Lorem ipsum dolor sit amet consectetur
-                    adipisicing elit. Totam, tenetur?
+                    Find Out Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit. Totam, tenetur?
                   </h4>
                 </div>
                 <div class="blog-item-sum container">
@@ -309,22 +309,61 @@
                 </div>
                 <ul class="blog-info-link">
                   <li>
-                    <a href="#"><i class="fa fa-road"></i> Routes, Pathways</a>
+                    <a href="#"
+                      ><i class="fa-solid fa-magnifying-glass-arrow-right"></i>
+                      Questions, More info</a
+                    >
                   </li>
                   <div class="vr"></div>
                   <li>
-                    <a href="#"><i class="fa fa-comments"></i> 03 Comments</a>
+                    <a href="#"><i class="fa fa-comments"></i> 13 Comments</a>
                   </li>
                 </ul>
               </div>
             </article>
           </div>
         </div>
+        <!-- #endregion -->
+
+        <!-- #region Right Column -->
         <div class="col-md-4">
-          <div class="row justify-content-md-center py-3">
-            <div class="col col-lg-2">1 of 3</div>
-          </div>
+          <aside class="newsletter-section">
+            <div class="container">
+              <div class="row justify-content-md-center pt-4">
+                <div class="input-group justify-content-center" id="Search-box">
+                  <div class="form-outline">
+                    <input
+                      id="search-inpu"
+                      type="search"
+                      id="form"
+                      class="form-control"
+                      placeholder="Search Keyword"
+                    />
+                  </div>
+                  <button
+                    id="search-button"
+                    type="button"
+                    class="btn btn-warning"
+                  >
+                    <i class="fas fa-search text-light"></i>
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-outline-warning mt-2 w-75"
+                  >
+                    Search
+                  </button>
+                </div>
+                <div class="categories justify-content-center" id="category">
+                  <ul class="mr-auto">
+                   
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </aside>
         </div>
+        <!-- #endregion Right column-->
       </div>
     </div>
 
