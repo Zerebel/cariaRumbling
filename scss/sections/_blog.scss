@@ -1,26 +1,41 @@
 @use "../components/mixins" as *;
 .top-page {
   .head-img {
-    h2 {
-      position: absolute;
-      top: 6rem;
-      left: 50%;
-      margin-right: -50%;
-      right: 50%;
+    .gradient {
+      @include gradient;
+    }
+    position: relative;
+    @media (hover: hover) {
+      h1 {
+        position: absolute;
+        top: 38%;
+        left: 44%;
+        clip-path: circle(4rem);
+        @include blurglass-low;
+      }
     }
   }
 }
-body{
+@media (hover: none) {
+  .head-img {
+    h1 {
+      position: absolute;
+      top: 30%;
+      left: 25%;
+      @include blurglass-low;
+    }
+  }
+}
+body {
   background-color: #ffffffbb;
 
-  hr{
+  hr {
     height: 0.3rem;
     @include hr-line;
   }
 }
 article {
   .blog-area {
-    
     ul {
       padding: 0;
       display: inline-flex;
@@ -101,23 +116,21 @@ article {
     }
   }
 
-  .tag-cloud{
-
-    .tag-group{
-      ul{
-        li{
-
+  .tag-cloud {
+    .tag-group {
+      ul {
+        li {
           background-color: rgba(233, 185, 12, 0.942);
           border-radius: 5px;
-          &:hover{
+          &:hover {
             background-color: rgb(82, 76, 3);
           }
-          a{
+          a {
             text-decoration: none;
             color: #fff;
-            @media(hover:hover){
-              &:hover{
-               font-weight: bolder; 
+            @media (hover: hover) {
+              &:hover {
+                font-weight: bolder;
               }
             }
           }

@@ -13,7 +13,7 @@
   margin: 0;
   background-image: var(--line-gradient-color);
   background-origin: content-box;
-  animation: spin 1s infinite;
+  animation: spin 2s infinite;
   animation-timing-function: ease-in-out;
   background-size: 200%;
 
@@ -69,4 +69,28 @@
   background-color: rgba(232, 180, 96, 0.11);
   border-radius: 12px;
   border: 1px solid rgba(209, 213, 219, 0.3);
+}
+
+@mixin gradient {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: -moz-linear-gradient(
+    left,
+    rgba(0, 0, 0, 0.4) 0%,
+    rgba(0, 0, 0, 0.4) 100%
+  );
+  background: -webkit-linear-gradient(
+    left,
+    rgba(0, 0, 0, 0.4) 0%,
+    rgba(0, 0, 0, 0.4) 100%
+  );
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.4) 0%,
+    rgba(0, 0, 0, 0.4) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e3000000', endColorstr='#e3000000', GradientType=1);
 }
