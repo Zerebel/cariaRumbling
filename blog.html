@@ -102,10 +102,10 @@
         <h2 class="fs-1 text-uppercase fw-bold text-warning">Blog Post</h2>
       </div>
     </div>
-    <div class="container">
+    <div class="container-fluid" id="main-container">
       <div class="row">
         <!-- #region Left Column -->
-        <div class="col-md-8">
+        <div class="col-md-8" id="blog-left">
           <div class="row justify-content-md-center py-3">
             <!-- First Article -->
             <article class="blog blog-area-1" id="blog-area-1">
@@ -328,8 +328,9 @@
         <!-- #region Right Column -->
         <div class="col-md-4">
           <aside class="newsletter-section">
-            <div class="container">
+            <div class="container-lg">
               <div class="row justify-content-md-center pt-4">
+                <!-- Search Area-->
                 <div class="input-group justify-content-center" id="Search-box">
                   <div class="form-outline">
                     <input
@@ -349,16 +350,225 @@
                   </button>
                   <button
                     type="button"
-                    class="btn btn-outline-warning mt-2 w-75"
+                    class="btn btn-outline-warning mt-2 w-75 fw-bold ls"
                   >
                     Search
                   </button>
                 </div>
-                <div class="categories justify-content-center" id="category">
-                  <ul class="mr-auto">
-                   
+
+                <!-- #region Categories -->
+                <!-- Categories -->
+                <div
+                  class="categories justify-content-center px-5 d-lg-block d-none mt-3"
+                  id="category"
+                >
+                  <p class="text-warning pt-2 text-center text-uppercase fs-5">
+                    Categories
+                  </p>
+                  <ul class="list-group">
+                    <li
+                      class="list-group-item d-flex justify-content-between align-items-start"
+                    >
+                      <div class="ms-2 me-auto">
+                        <a
+                          href=""
+                          class="stretched-link text-decoration-none text-black-50"
+                        >
+                          <div class="fw-bold">Kits or wears</div>
+                        </a>
+                      </div>
+                      <span class="badge bg-warning rounded-pill">31</span>
+                    </li>
+                    <li
+                      class="list-group-item d-flex justify-content-between align-items-start"
+                    >
+                      <div class="ms-2 me-auto">
+                        <a
+                          href=""
+                          class="stretched-link text-decoration-none text-black-50"
+                        >
+                          <div class="fw-bold">Routes</div>
+                        </a>
+                      </div>
+                      <span class="badge bg-warning rounded-pill">14</span>
+                    </li>
+                    <li
+                      class="list-group-item d-flex justify-content-between align-items-start"
+                    >
+                      <div class="ms-2 me-auto">
+                        <a
+                          href=""
+                          class="stretched-link text-decoration-none text-black-50"
+                        >
+                          <div class="fw-bold">Groups</div>
+                        </a>
+                      </div>
+                      <span class="badge bg-warning rounded-pill">11</span>
+                    </li>
+                    <li
+                      class="list-group-item d-flex justify-content-between align-items-start"
+                    >
+                      <div class="ms-2 me-auto">
+                        <a
+                          href=""
+                          class="stretched-link text-decoration-none text-black-50"
+                        >
+                          <div class="fw-bold">Latest News</div>
+                        </a>
+                      </div>
+                      <span class="badge bg-warning rounded-pill">21</span>
+                    </li>
+                    <li
+                      class="list-group-item d-flex justify-content-between align-items-start"
+                    >
+                      <div class="ms-2 me-auto">
+                        <a
+                          href=""
+                          class="stretched-link text-decoration-none text-black-50"
+                        >
+                          <div class="fw-bold">Programmes</div>
+                        </a>
+                      </div>
+                      <span class="badge bg-warning rounded-pill">19</span>
+                    </li>
                   </ul>
                 </div>
+                <!-- #endregion Categories -->
+
+                <!-- #region Recent Post  -->
+                <div
+                  class="recent-post justify-content-center px-5 mt-3"
+                  id="recent-post"
+                >
+                  <p class="text-warning pt-2 text-center text-uppercase fs-5">
+                    Recent Post
+                  </p>
+                  <!-- Card 1 -->
+                  <div class="card mb-3" id="card-recent">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img
+                          src="/images/blog2.jpg"
+                          class="img-sm-fluid rounded-start"
+                          alt="Recent"
+                        />
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <a href="" class="stretched-link"
+                            ><h6 class="card-title pt-0">Opening the way</h6></a
+                          >
+                          <span class="card-text">
+                            Caria unveils a new route for sunday strolls
+                          </span>
+                          <p class="card-text">
+                            <small class="text-muted" id="card-foot">
+                              <i class="fa fa-clock"></i>
+                              August 31st
+                            </small>
+                            <span id="card-foot" class="text-muted"
+                              ><i class="fa fa-comment"></i> 53 comments</span
+                            >
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Card 2 -->
+                  <div class="card mb-3" id="card-recent">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img
+                          src="/images/blog2.jpg"
+                          class="img-sm-fluid rounded-start"
+                          alt="Recent"
+                        />
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <a href="" class="stretched-link"
+                            ><h6 class="card-title pt-0">Opening the way</h6></a
+                          >
+                          <span class="card-text">
+                            Caria unveils a new route for sunday strolls
+                          </span>
+                          <p class="card-text">
+                            <small class="text-muted" id="card-foot">
+                              <i class="fa fa-clock"></i>
+                              August 31st
+                            </small>
+                            <span id="card-foot" class="text-muted"
+                              ><i class="fa fa-comment"></i> 53 comments</span
+                            >
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Card 3 -->
+                  <div class="card mb-3" id="card-recent">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img
+                          src="/images/blog2.jpg"
+                          class="img-sm-fluid rounded-start"
+                          alt="Recent"
+                        />
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <a href="" class="stretched-link"
+                            ><h6 class="card-title pt-0">Opening the way</h6></a
+                          >
+                          <span class="card-text">
+                            Caria unveils a new route for sunday strolls
+                          </span>
+                          <p class="card-text">
+                            <small class="text-muted" id="card-foot">
+                              <i class="fa fa-clock"></i>
+                              August 31st
+                            </small>
+                            <span id="card-foot" class="text-muted"
+                              ><i class="fa fa-comment"></i> 53 comments</span
+                            >
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Card 4 -->
+                  <div class="card mb-3" id="card-recent">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img
+                          src="/images/blog2.jpg"
+                          class="img-sm-fluid rounded-start"
+                          alt="Recent"
+                        />
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <a href="" class="stretched-link"
+                            ><h6 class="card-title pt-0">Opening the way</h6></a
+                          >
+                          <span class="card-text">
+                            Caria unveils a new route for sunday strolls
+                          </span>
+                          <p class="card-text">
+                            <small class="text-muted" id="card-foot">
+                              <i class="fa fa-clock"></i>
+                              May 1st
+                            </small>
+                            <span id="card-foot" class="text-muted"
+                              ><i class="fa fa-comment"></i> 31 comments</span
+                            >
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- #endregion Recent Post-->
               </div>
             </div>
           </aside>

@@ -11795,6 +11795,30 @@ article .blog-area .blog-item-img .blog-item-date a p {
 }
 
 @media (hover: hover) {
+  #main-container #blog-left {
+    padding-left: 4em;
+  }
+}
+@media (hover: hover) {
+  #main-container .newsletter-section #card-recent:hover a {
+    color: goldenrod;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+  }
+}
+#main-container .newsletter-section #card-recent a {
+  text-decoration: none;
+  color: #000;
+}
+#main-container .newsletter-section #card-recent .card-text i {
+  color: goldenrod;
+}
+#main-container .newsletter-section #card-recent .card-text #card-foot {
+  padding-left: 0.17rem;
+  font-size: 0.8rem;
+}
+
+@media (hover: hover) {
   .newsletter .input-group {
     width: 50%;
   }

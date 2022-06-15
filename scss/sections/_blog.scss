@@ -58,3 +58,38 @@ article {
     }
   }
 }
+
+#main-container {
+  #blog-left {
+    @media (hover: hover) {
+      padding-left: 4em;
+    }
+  }
+
+  .newsletter-section {
+    #card-recent {
+      @media (hover: hover) {
+        &:hover {
+          a {
+            color: goldenrod;
+            text-align: center;
+            transition: all 0.3s ease-in-out;
+          }
+        }
+      }
+      a {
+        text-decoration: none;
+        color: #000;
+      }
+      .card-text {
+        i {
+          color: goldenrod;
+        }
+        #card-foot {
+          padding-left: 0.17rem;
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }
+}
