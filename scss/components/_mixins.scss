@@ -1,3 +1,32 @@
+:root {
+  --line-gradient-color: linear-gradient(
+    to left,
+    gold,
+    yellow,
+    goldenrod,
+    #fff
+  );
+}
+
+@mixin hr-line {
+  padding: 0;
+  margin: 0;
+  background-image: var(--line-gradient-color);
+  background-origin: content-box;
+  animation: spin 1s infinite;
+  animation-timing-function: ease-in-out;
+  background-size: 200%;
+
+  @keyframes spin {
+    from {
+      background-position: 0% 0%;
+    }
+    to {
+      background-position: 200% 0%;
+    }
+  }
+}
+
 @mixin blurglass {
   backdrop-filter: blur(13px) saturate(152%);
   -webkit-backdrop-filter: blur(13px) saturate(152%);
