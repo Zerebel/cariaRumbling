@@ -33,6 +33,7 @@
     "bootstrap": "^5.2.0-beta1",
     "css.gg": "^2.0.0",
     "fontawesome-5-icons-list": "^1.0.1",
+    "ngx-owl-carousel-o": "^7.0.2",
     "postcss": "^8.4.14",
     "sass": "^1.52.1"
   },
