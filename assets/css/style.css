@@ -11881,6 +11881,9 @@ article .blog-area .blog-item-img .blog-item-date a p {
   padding-left: 0.17rem;
   font-size: 0.8rem;
 }
+#main-container .newsletter-section #blog-search-button:hover {
+  color: #fff;
+}
 #main-container .tag-cloud .tag-group ul li {
   background-color: rgba(233, 185, 12, 0.942);
   border-radius: 5px;
@@ -11895,6 +11898,45 @@ article .blog-area .blog-item-img .blog-item-date a p {
 @media (hover: hover) {
   #main-container .tag-cloud .tag-group ul li a:hover {
     font-weight: bolder;
+  }
+}
+
+.faq-container .top-page .faq-img {
+  position: relative;
+}
+.faq-container .top-page .faq-img .gradient {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: -moz-linear-gradient(left, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%);
+  background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%);
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#e3000000", endColorstr="#e3000000", GradientType=1);
+}
+@media (hover: hover) {
+  .faq-container .top-page .faq-img h1 {
+    position: absolute;
+    top: 43%;
+    left: 20%;
+    backdrop-filter: blur(13px) saturate(152%);
+    -webkit-backdrop-filter: blur(13px) saturate(152%);
+    background-color: rgba(233, 226, 214, 0.41);
+    border: 1px solid rgba(209, 213, 219, 0.3);
+    border-radius: 1.1rem;
+  }
+}
+@media (hover: none) {
+  .faq-container .top-page .faq-img h1 {
+    position: absolute;
+    bottom: 1%;
+    left: 4%;
+    backdrop-filter: blur(4px) saturate(200%);
+    -webkit-backdrop-filter: blur(4px) saturate(200%);
+    background-color: rgba(245, 189, 103, 0.4);
+    border-radius: 12px;
+    border: 1px solid rgba(209, 213, 219, 0.3);
   }
 }
 

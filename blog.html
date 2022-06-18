@@ -325,19 +325,19 @@
             <nav aria-label="Next blog post" class="center">
            <ul class="pagination justify-content-center">
     <li class="page-item">
-      <span class="page-link">Previous</span>
+      <span class="page-link text-light bg-warning disabled">Previous</span>
     </li>
     <li class="page-item">
-      <a class="page-link" href="#">1</a>
+      <span class="page-link text-light bg-warning" >1</span>
     </li>
-    <li class="page-item active" aria-current="page">
-      <span class="page-link">2</span>
-    </li>
-    <li class="page-item">
-      <a class="page-link" href="blog-2.html">3</a>
+    <li class="page-item" aria-current="page">
+      <a href="blog-2.html" class="page-link text-warning">2</a>
     </li>
     <li class="page-item">
-      <a class="page-link" href="blog-2.html">Next</a>
+      <a class="page-link text-warning" href="blog-2.html">3</a>
+    </li>
+    <li class="page-item">
+      <a class="page-link text-light bg-warning" href="blog-2.html">Next</a>
     </li>
   </ul>
 </nav>
@@ -352,9 +352,9 @@
               <div class="row justify-content-md-center pt-4">
                 <!-- Search Area-->
                 <div class="input-group justify-content-center" id="Search-box">
-                  <div class="form-outline">
+                  <div class="form-outline w-75">
                     <input
-                      id="search-inpu"
+                      id="search-input"
                       type="search"
                       id="form"
                       class="form-control"
@@ -370,7 +370,8 @@
                   </button>
                   <button
                     type="button"
-                    class="btn btn-outline-warning mt-2 w-75 fw-bold ls"
+                    class="btn btn-outline-warning mt-2 w-75 fw-bold "
+                    id="blog-search-button"
                   >
                     Search
                   </button>

@@ -1,0 +1,29 @@
+@use "../components/mixins" as *;
+.faq-container {
+  .top-page {
+    .faq-img {
+      .gradient {
+        @include gradient;
+      }
+      position: relative;
+      @media (hover: hover) {
+        h1 {
+          position: absolute;
+          top: 43%;
+          left: 20%;
+          @include blurglass;
+          border-radius: 1.1rem;
+        }
+      }
+
+      @media (hover: none) {
+        h1 {
+          position: absolute;
+          bottom: 1%;
+          left: 4%;
+          @include blurglass-low;
+        }
+      }
+    }
+  }
+}

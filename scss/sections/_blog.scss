@@ -114,6 +114,11 @@ article {
         }
       }
     }
+    #blog-search-button{
+      &:hover{
+        color: #fff;
+      }
+    }
   }
 
   .tag-cloud {
