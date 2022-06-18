@@ -24,7 +24,19 @@
           border: none;
           color: goldenrod;
         }
+
+      
       }
     }
   }
+}
+
+@media(hover:none){
+  .faq-card{
+     #faq-image{
+    max-width: 50%;
+    margin-left:25%;
+  }
+  }
+ 
 }

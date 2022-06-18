@@ -105,17 +105,18 @@
       <div class="row main-page">
         <div class="col-md-8 my-3 px-4">
           <div class="card mb-3" style="max-width: 540px">
-            <div class="row g-0">
+            <div class="row g-0 faq-card">
               <div class="col-md-4">
                 <img
-                  src="images/faq-head.jpg"
-                  class="rounded-start"
+                  src="images/faq-head.png"
+                  class="rounded-start img-fluid"
+                  id="faq-image"
                   alt="question image"
                 />
               </div>
               <div class="col-md-8">
                 <div class="card-body">
-                  <h5 class="card-title">
+                  <h5 class="card-title text-center text-lg-start">
                     <span class="text-warning">Caria </span>FAQ's
                   </h5>
                   <p class="card-text">
@@ -440,7 +441,7 @@
                   aria-current="true"
                 >
                   <div class="d-flex w-100 justify-content-between">
-                    <h5 class="mb-1">Labadi Walking Holiday</h5>
+                    <h6 class="mb-1">Labadi Walking Holiday</h6>
                     <small
                       ><i class="fa fa-star text-warning" aria-hidden="true"></i
                     ></small>
@@ -449,7 +450,7 @@
                 </a>
                 <a href="#" class="list-group-item list-group-item-action">
                   <div class="d-flex w-100 justify-content-between">
-                    <h5 class="mb-1">Coach to Mccarthy Hill</h5>
+                    <h6 class="mb-1">Coach to Mccarthy Hill</h6>
                     <small
                       ><i
                         class="fa fa-location-arrow text-warning"
@@ -461,7 +462,7 @@
                 </a>
                 <a href="#" class="list-group-item list-group-item-action">
                   <div class="d-flex w-100 justify-content-between">
-                    <h5 class="mb-1">Dreaming Spires</h5>
+                    <h6 class="mb-1">Dreaming Spires</h6>
                     <small
                       ><i class="fa fa-moon text-warning" aria-hidden="true"></i
                     ></small>
@@ -472,7 +473,38 @@
             </div>
           </div>
 
-          <div class="submit-question"></div>
+          <div class="submit-question mt-3 card">
+            <div class="card-header bg-warning text-light fs-5">
+              Submit a Question
+            </div>
+            <form class="rowvn mx-2">
+              <div class=" mt-2 input-group">
+                <input
+                  type="email"
+                  class="form-control rounded-0 rounded-start"
+                  placeholder="Email"
+                  aria-describedby="inputEmail4"
+                /> 
+               <div class="bg-warning border-0 px-3 disabled rounded-end" id="inputEmail4">
+                <i class="fa fa-envelope-open text-light pt-2" aria-hidden="true"></i>
+               </div>
+              </div>
+             
+              <div class="mb-1 mt-2">
+                <textarea
+                  class="form-control "
+                  id="Textarea1"
+                  placeholder="Enter Your Question"
+                  rows="3"
+                ></textarea>
+              </div>
+              <div class="col-12 my-2">
+                <button type="submit" class="btn text-light btn-primary px-5">
+                  Submit
+                </button>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </main>

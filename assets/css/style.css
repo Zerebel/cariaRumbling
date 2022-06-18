@@ -11938,6 +11938,12 @@ article .blog-area .blog-item-img .blog-item-date a p {
   }
 }
 
+@media (hover: none) {
+  .faq-card #faq-image {
+    max-width: 50%;
+    margin-left: 25%;
+  }
+}
 @media (hover: hover) {
   .newsletter .input-group {
     width: 50%;
