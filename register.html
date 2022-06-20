@@ -10,7 +10,7 @@
     />
     <meta name="generator" content="Caria Rambling" />
     <title>Caria Rambling Club</title>
-
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
     <!-- #region Css Links -->
     <link rel="stylesheet" href="assets/css/style.css" />
     <link
@@ -19,7 +19,7 @@
     />
     <!-- #endregion -->
   </head>
-  <body class="mt-3">
+  <body class="mt-5">
     <!-- #region Navbar -->
     <nav class="navbar navbar-expand-lg fixed-top">
       <div class="container-fluid">
@@ -89,6 +89,197 @@
       </div>
     </nav>
     <!-- #endregion Navbar -->
+
+    <!-- #region Large Reg-page -->
+    <div class="main reg-container mt-5">
+      <div class="row my-5 py-5 container-fluid">
+        <div class="col-sm-12 col-lg-6 reg-image d-none d-md-block w-50">
+          <img
+            src="images/sign-up.jpg"
+            class="img-fluid rounded-start"
+            alt=""
+          />
+        </div>
+        <div class="col-sm-12 col-lg-6">
+          <form
+            class="form-control form border-0 text-center needs-validation h-100"
+            novalidate
+            id="reg-sec"
+          >
+            <h3 class="text-warning">Register</h3>
+            <p>
+              <small
+                >Register for free to create your personalised My
+                <span class="text-warning fs-6">Caria</span> Area. Your details
+                are secure and protected by our
+                <a href="" class="text-decoration-none"> privacy policy </a>
+              </small>
+            </p>
+            <div class="d-flex flex-wrap justify-content-between Name">
+              <!-- First Name -->
+              <div id="first-name" class="flex-fill mx-1">
+                <div class="input-group mb-3 has-validation">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="First Name"
+                    aria-label="First Name"
+                    aria-describedby="basic-addon1"
+                  />
+                  <div class="input-group-apend">
+                    <span
+                      class="input-group-text rounded-0 rounded-end py-3 bg-warning"
+                      id="basic-addon1"
+                    >
+                      <i class="fa fa-user text-white" aria-hidden="true"></i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <!-- Second Name -->
+              <div id="sec-name" class="flex-fill mx-1">
+                <div class="input-group mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Last Name"
+                    aria-label="Last Name"
+                    aria-describedby="basic-addon1"
+                  />
+                  <div class="input-group-apend">
+                    <span
+                      class="input-group-text rounded-0 rounded-end py-3 bg-warning"
+                      id="basic-addon1"
+                    >
+                      <i class="fa fa-user text-white" aria-hidden="true"></i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Email field -->
+            <div class="email">
+              <div class="input-group mb-3">
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Enter your Email"
+                  aria-label="Email"
+                  aria-describedby="basic-addon1"
+                />
+                <div class="input-group-apend">
+                  <span
+                    class="input-group-text rounded-0 rounded-end py-3 bg-warning"
+                    id="basic-addon1"
+                  >
+                    <i
+                      class="fa fa-envelope-open text-white"
+                      aria-hidden="true"
+                    ></i>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <!-- Password field -->
+            <div class="Password">
+              <div class="input-group mb-3">
+                <input
+                  type="password"
+                  class="form-control"
+                  placeholder="Password: at least 8 characters"
+                  aria-label="Password"
+                  aria-describedby="basic-addon1"
+                />
+                <div class="input-group-apend">
+                  <span
+                    class="input-group-text rounded-0 rounded-end py-3 bg-warning"
+                    id="basic-addon1"
+                  >
+                    <i class="fa fa-key text-white" aria-hidden="true"></i>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <!-- Confirm Password -->
+            <div class="Password">
+              <div class="input-group mb-3">
+                <input
+                  type="password"
+                  class="form-control"
+                  placeholder="Confirm Password"
+                  aria-label="Confirm Password"
+                  aria-describedby="c-password-addon"
+                />
+                <div class="input-group-apend">
+                  <span
+                    class="input-group-text rounded-0 rounded-end py-3 bg-warning"
+                    id="c-password-addon"
+                  >
+                    <i class="fa fa-key text-white" aria-hidden="true"></i>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <!-- Address Field -->
+            <div class="Address">
+              <div class="input-group mb-3">
+                <input
+                  type="address"
+                  class="form-control"
+                  placeholder="Address"
+                  aria-label="Address"
+                  aria-describedby="c-address-addon"
+                />
+                <div class="input-group-apend">
+                  <span
+                    class="input-group-text rounded-0 rounded-end py-3 bg-warning"
+                    id="c-address-addon"
+                  >
+                    <i
+                      class="fa fa-address-book text-white"
+                      aria-hidden="true"
+                    ></i>
+                  </span>
+                </div>
+              </div>
+              <div class="input-group mb-3">
+                <input
+                  type="address"
+                  class="form-control"
+                  placeholder="Postal Address"
+                  aria-label="Post Address"
+                  aria-describedby="post-address-addon"
+                />
+                <div class="input-group-apend">
+                  <span
+                    class="input-group-text rounded-0 rounded-end py-3 bg-warning"
+                    id="post-address-addon"
+                  >
+                    <i class="fa fa-location text-white" aria-hidden="true"></i>
+                  </span>
+                </div>
+              </div>
+              <div class="rounded-end">
+                <p class="mt-5 text-start fs-6 text-light">
+                  <span class="bg-warning p-3 rounded-end">
+                    <i class="fa-solid fa-check-double"> </i>
+                    By signing up, you agree to our terms of service and privacy
+                    policy.
+                  </span>
+                </p>
+              </div>
+              <button
+                type="submit"
+                class="btn btn-primary w-50 text-light mt-5"
+              >
+                Register
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- #endregion -->
 
     <!-- #region Footer Start -->
 

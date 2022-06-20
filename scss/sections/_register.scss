@@ -1,0 +1,8 @@
+@use "../components/mixins" as *;
+
+  .main{
+    #reg-sec{
+      @include blurglass;
+    }
+  }
+
