@@ -12433,10 +12433,9 @@ img {
 }
 
 /* #endregion */
-.carousel-indicators li {
-  width: 20px;
-  height: 20px;
-  border-radius: 100%;
+.carousel-indicators button {
+  clip-path: circle();
+  background-color: gold;
 }
 
 .insights {
