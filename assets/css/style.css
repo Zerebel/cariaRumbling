@@ -12433,11 +12433,6 @@ img {
 }
 
 /* #endregion */
-.carousel-indicators button {
-  clip-path: circle();
-  background-color: gold;
-}
-
 .insights {
   backdrop-filter: blur(3px) saturate(180%);
   -webkit-backdrop-filter: blur(3px) saturate(180%);
