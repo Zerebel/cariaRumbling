@@ -1,0 +1,4 @@
+[[redirects]]
+  from = "/*"
+  to = "/404-not-found.html"
+  status = 404
