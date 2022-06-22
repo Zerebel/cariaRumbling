@@ -8,9 +8,10 @@
     @media (hover: hover) {
       h1 {
         position: absolute;
-        top: 38%;
-        left: 44%;
-        clip-path: circle(4rem);
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        letter-spacing: 2rem;
         @include blurglass-low;
       }
     }
@@ -18,10 +19,12 @@
 }
 @media (hover: none) {
   .head-img {
+    position: relative;
     h1 {
       position: absolute;
-      top: 30%;
-      left: 25%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
       @include blurglass-low;
     }
   }
@@ -114,8 +117,8 @@ article {
         }
       }
     }
-    #blog-search-button{
-      &:hover{
+    #blog-search-button {
+      &:hover {
         color: #fff;
       }
     }

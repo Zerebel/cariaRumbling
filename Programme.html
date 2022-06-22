@@ -10,7 +10,7 @@
     />
     <meta name="generator" content="Caria Rambling" />
     <title>Caria Rambling Club</title>
-
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
     <!-- #region Css Links -->
     <link rel="stylesheet" href="assets/css/style.css" />
     <link
@@ -54,13 +54,16 @@
         >
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link"  href="index.html">Home</a>
+              <a class="nav-link" href="index.html">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="blog.html">Blog</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="Programme.html"
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="Programme.html"
                 >Current Programme</a
               >
             </li>
@@ -87,6 +90,321 @@
     </nav>
     <!-- #endregion Navbar -->
 
+    <!-- #region Main page -->
+    <div class="container" id="program">
+      <div class="walks-top">
+        <h1 class="text-warning text-center">Walks Programme</h1>
+        <div class="p-2 mb-2 container-fluid text-center">
+          Categories:
+          <a href="online.html">Shorter walks</a>
+          <div class="vr"></div>
+          <a href="online.html">Longer Walks</a>
+          <div class="vr"></div>
+          <a href="online.html">Medium Walks</a>
+          <div class="vr"></div>
+          <a href="online.html">Sunday Short Strolls</a>
+          <div class="vr"></div>
+          <a href="online.html">Sunday Walks</a>
+          <div class="vr"></div>
+          <a href="online.html">Tuesday Walks</a>
+        </div>
+        <i class="fa fa-calendar-alt text-warning" aria-hidden="true"></i>
+        <span class="text-black-50"
+          >Press on coloured <strong>days</strong> to see it's coresponding
+          Event</span
+        >
+      </div>
+      <div
+        class="calendar pt-5"
+        aria-labelledby="Calender showing current Programmes"
+      >
+        <div class="front">
+          <div class="current-date py-0 text-center">
+            <h1 class="fw-bold text-black-50">Friday 24th June, 2022</h1>
+          </div>
+
+          <div class="current-month table-responsive w-100">
+            <table class="table table-borderless text-center caption-top">
+              <thead>
+                <tr class="week-days">
+                  <th scope="col">SUN</th>
+                  <th scope="col">MON</th>
+                  <th scope="col">TUE</th>
+                  <th scope="col">WED</th>
+                  <th scope="col">THU</th>
+                  <th scope="col">FRI</th>
+                  <th scope="col">SAT</th>
+                </tr>
+              </thead>
+
+              <tbody class="weeks">
+                <tr class="first">
+                  <td class="last-month">29</td>
+                  <td class="last-month">30</td>
+                  <td class="last-month">31</td>
+                  <td data-bs-toggle="tooltip" title="No Event">01</td>
+                  <td data-bs-toggle="tooltip" title="No Event">02</td>
+                  <td data-bs-toggle="tooltip" title="No Event">03</td>
+                  <td data-bs-toggle="tooltip" title="No Event">04</td>
+                </tr>
+
+                <tr class="second">
+                  <td data-bs-toggle="tooltip" title="No Event">05</td>
+                  <td data-bs-toggle="tooltip" title="No Event">06</td>
+                  <td data-bs-toggle="tooltip" title="No Event">07</td>
+                  <td data-bs-toggle="tooltip" title="No Event">08</td>
+                  <td
+                    class="active"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#event1"
+                    aria-expanded="false"
+                    aria-controls="event1"
+                  >
+                    09
+                  </td>
+                  <td data-bs-toggle="tooltip" title="No Event">10</td>
+                  <td data-bs-toggle="tooltip" title="No Event">11</td>
+                </tr>
+
+                <tr class="third">
+                  <td data-bs-toggle="tooltip" title="No Event">12</td>
+                  <td data-bs-toggle="tooltip" title="No Event">13</td>
+                  <td data-bs-toggle="tooltip" title="No Event">14</td>
+                  <td
+                    class="active"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#event2"
+                    aria-expanded="false"
+                    aria-controls="event2"
+                  >
+                    15
+                  </td>
+                  <td data-bs-toggle="tooltip" title="No Event">16</td>
+                  <td data-bs-toggle="tooltip" title="No Event">17</td>
+                  <td data-bs-toggle="tooltip" title="No Event">18</td>
+                </tr>
+
+                <tr class="fourth">
+                  <td
+                    class="active"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#event3"
+                    aria-expanded="false"
+                    aria-controls="event3"
+                  >
+                    19
+                  </td>
+                  <td data-bs-toggle="tooltip" title="No Event">20</td>
+                  <td data-bs-toggle="tooltip" title="No Event">21</td>
+                  <td data-bs-toggle="tooltip" title="No Event">22</td>
+                  <td data-bs-toggle="tooltip" title="No Event">23</td>
+                  <td
+                    class="active"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#event4"
+                    aria-expanded="false"
+                    aria-controls="event4"
+                  >
+                    24
+                  </td>
+                  <td data-bs-toggle="tooltip" title="No Event">25</td>
+                </tr>
+
+                <tr class="fifth">
+                  <td data-bs-toggle="tooltip" title="No Event">26</td>
+                  <td data-bs-toggle="tooltip" title="No Event">27</td>
+                  <td data-bs-toggle="tooltip" title="No Event">28</td>
+                  <td data-bs-toggle="tooltip" title="No Event">29</td>
+                  <td data-bs-toggle="tooltip" title="No Event">30</td>
+                  <td class="last-month">01</td>
+                  <td class="last-month">02</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- #region Events -->
+        <div class="back collapse">
+          <!-- Event 1 -->
+          <div class="collapse" id="event1">
+            <div class="card mb-3">
+              <img
+                src="images/recent-post-route.jpg"
+                class="card-img-top"
+                alt="recent-post-route"
+              />
+              <div class="card-body">
+                <h5 class="card-title">9th June, 2022</h5>
+                <p class="card-text">
+                  <strong
+                    >Medium Walk - South Legon
+                    <i class="fa fa-location-pin" aria-hidden="true"></i>
+                  </strong>
+                  <br />
+                  Thursday, June 9, 2022 09:30 - 14:30 <br />
+                  Meeting Point: Legon Bafth Hub <br />
+                  Leader: John Smith<br />
+                  Age Limit: None.
+                </p>
+                <p class="card-text">
+                  <small class="text-muted">Last updated 15 days ago</small>
+                </p>
+              </div>
+              <div class="card-footer">
+                <button
+                  class="backs btn btn-warning text-light fs-5"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#event1"
+                  aria-expanded="false"
+                  aria-controls="event1"
+                >
+                  Go Back
+                </button>
+                <a href="online.html" class="btn btn-warning text-light fs-5">
+                  Join This Walk
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Event 2 -->
+          <div class="collapse" id="event2">
+            <div class="card mb-3">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7942.032990527323!2d-0.302746273225321!3d5.564572062158771!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf981cbd3bd7e1%3A0x7f18d142a8a547d1!2sMcCarthy%20Hill%20Pharmacy!5e0!3m2!1sen!2sgh!4v1655880584226!5m2!1sen!2sgh"
+                width="100%"
+                min
+                height="640"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+              <div class="card-body">
+                <h5 class="card-title">15th June, 2022</h5>
+                <p class="card-text">
+                  <strong
+                    >Shorter Walk - McCarthy Hill Suburb
+                    <i class="fa fa-location-pin" aria-hidden="true"></i>
+                  </strong>
+                  <br />
+                  Wednesday, June 15, 2022 10:30 - 16:30 <br />
+                  Meeting Point: McCarthy Hill Pharmacy <br />
+                  Leader: Lina Baiduu<br />
+                  Age Limit: None.
+                </p>
+                <p class="card-text">
+                  <small class="text-muted">Last updated 3 days ago</small>
+                </p>
+              </div>
+              <div class="card-footer">
+                <button
+                  class="backs btn btn-warning text-light fs-5"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#event2"
+                  aria-expanded="false"
+                  aria-controls="event2"
+                >
+                  Go Back
+                </button>
+                <a href="online.html" class="btn btn-warning text-light fs-5">
+                  Join This Walk
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Event 3 -->
+          <div class="collapse" id="event3">
+            <div class="card mb-3">
+              <img
+                src="images/recent-post-route.jpg"
+                class="card-img-top"
+                alt="recent-post-route"
+              />
+              <div class="card-body">
+                <h5 class="card-title">19th June, 2022</h5>
+                <p class="card-text">
+                  <strong
+                    >Longer Walk - Sadium Alabama Avenue
+                    <i class="fa fa-location-pin" aria-hidden="true"></i>
+                  </strong>
+                  <br />
+                  Wednesday, June 19, 2022 10:30 - 16:30 <br />
+                  Meeting Point: Junka Lopa Museum <br />
+                  Leader: Jane Doe<br />
+                  Age Limit: None.
+                </p>
+                <p class="card-text">
+                  <small class="text-muted">Last updated 3 days ago</small>
+                </p>
+              </div>
+              <div class="card-footer">
+                <button
+                  class="backs btn btn-warning text-light fs-5"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#event3"
+                  aria-expanded="false"
+                  aria-controls="event3"
+                >
+                  Go Back
+                </button>
+                <a href="online.html" class="btn btn-warning text-light fs-5">
+                  Join This Walk
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Event 4 -->
+          <div class="collapse" id="event4">
+            <div class="card mb-3">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7941.743804254572!2d-0.2452441232253831!3d5.5859448117087505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf99bdee01d13f%3A0x80ae7b6602ff8ea5!2sDe%20Mod!5e0!3m2!1sen!2sgh!4v1655881650982!5m2!1sen!2sgh"
+                width="100%"
+                height="640"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+              <div class="card-body">
+                <h5 class="card-title">24th June, 2022</h5>
+                <p class="card-text">
+                  <strong
+                    >Longer Walk - North Kaneshie Avenue
+                    <i class="fa fa-location-pin" aria-hidden="true"></i>
+                  </strong>
+                  <br />
+                  Wednesday, June 24, 2022 11:30 - 22:15 <br />
+                  Meeting Point: De Mod Junction <br />
+                  Leader: Amina Koomson<br />
+                  Age Limit: None.
+                </p>
+                <p class="card-text">
+                  <small class="text-muted">Last updated 15 mins ago</small>
+                </p>
+              </div>
+              <div class="card-footer">
+                <button
+                  class="backs btn btn-warning text-light fs-5"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#event4"
+                  aria-expanded="false"
+                  aria-controls="event4"
+                >
+                  Go Back
+                </button>
+                <a href="online.html" class="btn btn-warning text-light fs-5">
+                  Join This Walk
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- #endregion -->
+      </div>
+    </div>
+
+    <!-- #endregion Main-->
     <!-- #region Footer Start -->
 
     <footer class="page-footer font-small mdb-color m-3">

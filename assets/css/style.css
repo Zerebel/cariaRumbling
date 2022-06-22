@@ -11768,9 +11768,10 @@ textarea.form-control-lg {
 @media (hover: hover) {
   .top-page .head-img h1 {
     position: absolute;
-    top: 38%;
-    left: 44%;
-    clip-path: circle(4rem);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    letter-spacing: 2rem;
     backdrop-filter: blur(4px) saturate(200%);
     -webkit-backdrop-filter: blur(4px) saturate(200%);
     background-color: rgba(245, 189, 103, 0.4);
@@ -11780,10 +11781,14 @@ textarea.form-control-lg {
 }
 
 @media (hover: none) {
+  .head-img {
+    position: relative;
+  }
   .head-img h1 {
     position: absolute;
-    top: 30%;
-    left: 25%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     backdrop-filter: blur(4px) saturate(200%);
     -webkit-backdrop-filter: blur(4px) saturate(200%);
     background-color: rgba(245, 189, 103, 0.4);
@@ -11901,6 +11906,10 @@ article .blog-area .blog-item-img .blog-item-date a p {
   }
 }
 
+.top-head-image {
+  max-height: 35vh;
+}
+
 .faq-container .top-page .faq-img {
   position: relative;
 }
@@ -11918,8 +11927,9 @@ article .blog-area .blog-item-img .blog-item-date a p {
 @media (hover: hover) {
   .faq-container .top-page .faq-img h1 {
     position: absolute;
-    top: 43%;
-    left: 20%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     backdrop-filter: blur(4px) saturate(200%);
     -webkit-backdrop-filter: blur(4px) saturate(200%);
     background-color: rgba(245, 189, 103, 0.4);
@@ -11931,10 +11941,15 @@ article .blog-area .blog-item-img .blog-item-date a p {
 @media (hover: none) {
   .faq-container .top-page .faq-img h1 {
     position: absolute;
-    bottom: 0;
-    border-radius: 0;
-    border: none;
-    color: goldenrod;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    backdrop-filter: blur(4px) saturate(200%);
+    -webkit-backdrop-filter: blur(4px) saturate(200%);
+    background-color: rgba(245, 189, 103, 0.4);
+    border-radius: 12px;
+    border: 1px solid rgba(209, 213, 219, 0.3);
+    border-radius: 1.1rem;
   }
 }
 
@@ -12461,11 +12476,226 @@ img {
   object-fit: cover;
 }
 
-.main #reg-sec {
-  backdrop-filter: blur(13px) saturate(152%);
-  -webkit-backdrop-filter: blur(13px) saturate(152%);
-  background-color: rgba(233, 226, 214, 0.41);
+@media (hover: none) {
+  .main #reg-sec {
+    backdrop-filter: blur(3px) saturate(180%);
+    -webkit-backdrop-filter: blur(3px) saturate(180%);
+    background-color: rgba(232, 180, 96, 0.11);
+    border-radius: 12px;
+    border: 1px solid rgba(209, 213, 219, 0.3);
+  }
+  .main #reg-secs {
+    backdrop-filter: blur(3px) saturate(180%);
+    -webkit-backdrop-filter: blur(3px) saturate(180%);
+    background-color: rgba(232, 180, 96, 0.11);
+    border-radius: 12px;
+    border: 1px solid rgba(209, 213, 219, 0.3);
+  }
+}
+
+#program {
+  margin-top: 5rem;
+  /* Front - Calendar */
+  /* Back - Event form */
+  /* Flip animation */
+}
+#program a {
+  text-decoration: none;
+}
+#program body {
+  background: #dfebed;
+}
+#program .container {
+  margin-top: 4rem !important;
+  max-width: 95%;
+}
+#program .card {
+  backdrop-filter: blur(3px) saturate(180%);
+  -webkit-backdrop-filter: blur(3px) saturate(180%);
+  background-color: rgba(232, 180, 96, 0.11);
+  border-radius: 12px;
   border: 1px solid rgba(209, 213, 219, 0.3);
+}
+#program .calendar {
+  backdrop-filter: blur(3px) saturate(180%);
+  -webkit-backdrop-filter: blur(3px) saturate(180%);
+  background-color: rgba(232, 180, 96, 0.11);
+  border-radius: 12px;
+  border: 1px solid rgba(209, 213, 219, 0.3);
+  border: 1px solid rgba(209, 213, 219, 0.3);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+  perspective: 1000;
+  transition: 0.9s;
+  transform-style: preserve-3d;
+  width: 100%;
+}
+#program .front {
+  transform: rotateY(0deg);
+}
+#program .table tr {
+  cursor: default;
+}
+#program .table tr td:not(.last-month):hover {
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.4s ease-in-out;
+}
+#program .current-date h1 {
+  color: #000;
+  font-size: 1.4em;
+  font-weight: 300;
+}
+#program .week-days {
+  color: #aaa;
+}
+#program .weeks {
+  color: rgb(137, 109, 8);
+}
+#program .weeks tr {
+  font-size: 1.2em;
+  font-weight: 300;
+}
+@media screen and (min-width: 768px) {
+  #program .weeks tr td {
+    padding: 1.5rem;
+  }
+}
+#program .last-month {
+  opacity: 0.3;
+}
+#program .weeks .active {
+  clip-path: circle();
+  color: #fff;
+  background: rgb(149, 139, 1);
+}
+#program .weeks .active:hover {
+  background: gold;
+  color: #fff;
+}
+#program .weeks :hover {
+  cursor: pointer;
+}
+#program .weeks :hover tr td {
+  cursor: pointer;
+}
+#program .back {
+  height: 100%;
+  transform: rotateY(180deg);
+}
+@media screen and (max-width: 768px) {
+  #program iframe {
+    max-height: 30vh;
+  }
+}
+@media screen and (min-width: 768px) {
+  #program iframe {
+    max-height: 50vh;
+  }
+}
+#program .flip {
+  transform: rotateY(180deg);
+}
+
+html {
+  scroll-padding: 40vh;
+  user-select: none;
+}
+
+.online-page .top-page .faq-img {
+  position: relative;
+}
+.online-page .top-page .faq-img .gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: -moz-linear-gradient(left, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%);
+  background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%);
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#e3000000", endColorstr="#e3000000", GradientType=1);
+}
+@media (hover: hover) {
+  .online-page .top-page .faq-img h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    backdrop-filter: blur(4px) saturate(200%);
+    -webkit-backdrop-filter: blur(4px) saturate(200%);
+    background-color: rgba(245, 189, 103, 0.4);
+    border-radius: 12px;
+    border: 1px solid rgba(209, 213, 219, 0.3);
+    border-radius: 1.1rem;
+  }
+}
+@media (hover: none) {
+  .online-page .top-page .faq-img h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    backdrop-filter: blur(4px) saturate(200%);
+    -webkit-backdrop-filter: blur(4px) saturate(200%);
+    background-color: rgba(245, 189, 103, 0.4);
+    border-radius: 12px;
+    border: 1px solid rgba(209, 213, 219, 0.3);
+    border-radius: 1.1rem;
+  }
+}
+.online-page .booking-form {
+  backdrop-filter: blur(4px) saturate(200%);
+  -webkit-backdrop-filter: blur(4px) saturate(200%);
+  background-color: rgba(245, 189, 103, 0.4);
+  border-radius: 12px;
+  border: 1px solid rgba(209, 213, 219, 0.3);
+  border-radius: 0;
+}
+.online-page .card img {
+  max-height: 20vh;
+}
+
+.about-page .top-page .faq-img {
+  position: relative;
+}
+.about-page .top-page .faq-img .gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: -moz-linear-gradient(left, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%);
+  background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%);
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#e3000000", endColorstr="#e3000000", GradientType=1);
+}
+@media (hover: hover) {
+  .about-page .top-page .faq-img h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    backdrop-filter: blur(4px) saturate(200%);
+    -webkit-backdrop-filter: blur(4px) saturate(200%);
+    background-color: rgba(245, 189, 103, 0.4);
+    border-radius: 12px;
+    border: 1px solid rgba(209, 213, 219, 0.3);
+    border-radius: 1.1rem;
+  }
+}
+@media (hover: none) {
+  .about-page .top-page .faq-img h1 {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    backdrop-filter: blur(4px) saturate(200%);
+    -webkit-backdrop-filter: blur(4px) saturate(200%);
+    background-color: rgba(245, 189, 103, 0.4);
+    border-radius: 12px;
+    border: 1px solid rgba(209, 213, 219, 0.3);
+    border-radius: 1.1rem;
+  }
 }
 
 /*!

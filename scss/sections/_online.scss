@@ -1,9 +1,10 @@
-@use "../components/mixins" as *;
-
-.top-head-image {
-  max-height: 35vh;
+@use '../components/mixins' as *;
+html{
+    scroll-padding:40vh;
+    user-select: none;
 }
-.faq-container {
+.online-page {
+
   .top-page {
     .faq-img {
       .gradient {
@@ -33,13 +34,15 @@
       }
     }
   }
-}
+    .booking-form{
+      @include blurglass-low;
+      border-radius: 0;
+    }
+  
+  .card{
 
-@media (hover: none) {
-  .faq-card {
-    #faq-image {
-      max-width: 50%;
-      margin-left: 25%;
+    img{
+      max-height: 20vh;
     }
   }
 }

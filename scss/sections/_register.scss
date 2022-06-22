@@ -1,8 +1,14 @@
 @use "../components/mixins" as *;
 
   .main{
-    #reg-sec{
-      @include blurglass;
+    @media (hover:none) {
+      #reg-sec{
+        @include blurglass-gold;
+      }
+      #reg-secs{
+        @include blurglass-gold;
+      }
+      
     }
   }
 

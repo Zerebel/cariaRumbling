@@ -1,9 +1,6 @@
 @use "../components/mixins" as *;
 
-.top-head-image {
-  max-height: 35vh;
-}
-.faq-container {
+.about-page {
   .top-page {
     .faq-img {
       .gradient {
@@ -24,22 +21,13 @@
       @media (hover: none) {
         h1 {
           position: absolute;
-          top: 50%;
+          top: 60%;
           left: 50%;
           transform: translate(-50%, -50%);
           @include blurglass-low;
           border-radius: 1.1rem;
         }
       }
-    }
-  }
-}
-
-@media (hover: none) {
-  .faq-card {
-    #faq-image {
-      max-width: 50%;
-      margin-left: 25%;
     }
   }
 }
