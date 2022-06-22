@@ -104,8 +104,7 @@
             class="active"
             aria-current="true"
             aria-label="Slide 1"
-          >
-        </button>
+          ></button>
           <button
             type="button"
             data-bs-target="#myCarousel"
@@ -160,8 +159,11 @@
     </section>
 
     <section class="carol-mobile mt-5">
-      <div id="carol2" class="carousel carousel-fade" data-bs-ride="carousel"
-      data-bs-interval="15000"
+      <div
+        id="carol2"
+        class="carousel carousel-fade"
+        data-bs-ride="carousel"
+        data-bs-interval="15000"
       >
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -245,7 +247,7 @@
             can enjoy walking in green spaces, and to improving Legon's most
             popular and least-known walking places.
           </p>
-          <a href="about.html" class="stretched-link btn btn-warning">Visit Blog</a>
+          <a href="about.html" class="btn btn-warning">Visit Blog</a>
         </div>
         <div class="col-md-6 mb-md-0 p-md-4 info-image d-md-block d-none">
           <img src="/images/intro-2.jpg" class="w-100" alt="..." />
@@ -268,7 +270,7 @@
             <div class="col-md-6 col-img">
               <img
                 src="/images/walking-route-route-2.jpg"
-                class="img-fluid rounded-start"
+                class="rounded-start"
                 alt="walking-route-route-2"
               />
             </div>
@@ -276,9 +278,10 @@
               <div class="card-body">
                 <h5 class="card-title text-center">Where we go</h5>
                 <p class="card-text bg-white">
-                  This is a wider card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
+                  We presently plan our walks in the 200-kilometer radius around
+                  Legon. We go on hikes all throughout Legon, including in the
+                  McCarthy, North Kaneshie, the Ridge Vicinity, and beyond
+                  afield into West Bubushie.
                 </p>
                 <div class="card-footer d-grid">
                   <a href="blog.html#blog-area-4" class="stretched-link">
@@ -294,7 +297,7 @@
             <div class="col-md-6">
               <img
                 src="/images/walking-route-route-1.jpg"
-                class="img-fluid rounded-start"
+                class="rounded-start"
                 alt="walking-route-route-1"
               />
             </div>
@@ -302,9 +305,9 @@
               <div class="card-body">
                 <h5 class="card-title text-center">Our Walks</h5>
                 <p class="card-text">
-                  This is a wider card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
+                  Five categories are used to group our everyday neighborhood
+                  strolls. These include the Sunday stroll as well as shorter,
+                  longer, medium, and Tuesday walks.
                 </p>
                 <div class="card-footer d-grid">
                   <a href="blog.html#blog-area-1" class="stretched-link">
@@ -328,9 +331,9 @@
               <div class="card-body">
                 <h5 class="card-title text-center">Become a rambler</h5>
                 <p class="card-text">
-                  This is a wider card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
+                  Explore about the many new walking options, more ways to
+                  improve your wellbeing, and ways to support the preservation
+                  of our favorite walking areas, by becoming a rambler.
                 </p>
                 <div class="card-footer d-grid">
                   <a href="blog.html#blog-area-4" class="stretched-link">
@@ -354,9 +357,8 @@
               <div class="card-body">
                 <h5 class="card-title text-center">Find a group</h5>
                 <p class="card-text">
-                  This is a wider card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
+                  With over 700 Caria Ramblers groups, there is certain to be
+                  one near you.
                 </p>
                 <div class="card-footer d-grid">
                   <a href="blog.html#blog-area-3" class="stretched-link">
@@ -369,24 +371,6 @@
         </div>
       </div>
     </section>
-    <!-- #endregion walks -->
-
-    <!-- #region Coaches -->
-    <!-- <section class="coaches">
-      <p class="text-warning pt-2 text-center text-uppercase fs-1 fw-bold">
-        Our Coaches
-      </p>
-      <div class="card bg-dark text-white fs-3">
-  <img src="images/carol2.jpg" class="card-img img-fluid" alt="...">
-  <div class="card-img-overlay">
-    <h3 class="card-title text-break text-warning">Why Coaches?</h3>
-    <p class="card-text">This is a wider card with supporting <h6>text below as a natural lead-in to additional content. This content</h6> is a little bit longer.</p>
-    <p class="card-text">Last updated 3 mins ago</p>
-  </div>
-</div>
-
-    </section> -->
-    <!-- #endregion coaches-->
 
     <!-- #region testimonial -->
     <section class="testimonials">
@@ -395,7 +379,12 @@
       </h5>
       <div class="container" id="featureContainer">
         <div class="row mx-auto my-auto justify-content-center">
-          <div id="feature" class="carousel slide" data-bs-ride="carousel">
+          <div
+            id="feature"
+            class="carousel slide"
+            data-bs-ride="carousel"
+            data-bs-interval="20000"
+          >
             <!-- Carousel Items -->
             <div class="carousel-inner" role="listbox">
               <div class="carousel-item">
@@ -458,24 +447,38 @@
     <!-- #endregion testimonial-->
 
     <!-- #region newsletter -->
-    <div class="container px-5 pt-3 newsletter d-flex justify-content-center">
-      <div class="input-group mb-3">
+    <div class="d-flex justify-content-center align-items-center">
+      <span class="form-label text-center">
+        Subscribe to Our Newsletter
+        <br />
+        <small>We promise no <span class="text-danger">spam</span></small>
+      </span>
+    </div>
+    <form
+      class="container px-5 pt-3 newsletter d-flex justify-content-center needs-validation"
+      novalidate
+    >
+      <div class="input-group mb-3 has-validation">
         <input
           type="email"
           class="form-control form-control-warning"
           placeholder="Enter email"
           aria-label="Recipient's username"
+          id="newslet"
+          name="newslet"
+          required
           aria-describedby="Newsletter_subscription_Email"
         />
         <button
           class="btn btn-warning text-white fw-bolder"
-          type="button"
+          type="submit"
           id="Newsletter_subscription_Email"
         >
           Subscribe
         </button>
+        <div class="invalid-feedback">Please enter a valid email address</div>
       </div>
-    </div>
+    </form>
     <!-- #endregion -->
 
     <!-- #region Footer Start -->
@@ -559,7 +562,7 @@
             <!--Copyright-->
             <p class="text-center text-md-left">
               © 2022 Copyright:
-              <a href="https://mdbootstrap.com/bootstrap-tutorial/">
+              <a href="index.html">
                 <strong> Caria Rambling</strong>
               </a>
             </p>
