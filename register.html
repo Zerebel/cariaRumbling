@@ -90,7 +90,7 @@
     </nav>
     <!-- #endregion Navbar -->
 
-    <!-- #region Large Reg-page -->
+    <!-- #region Reg-page -->
     <div class="main reg-container mt-5">
       <div class="row my-5 py-5 container-fluid">
         <div class="col-sm-12 col-lg-6 reg-image d-none d-md-block w-50">
@@ -102,8 +102,9 @@
         </div>
         <div class="col-sm-12 col-lg-6" id="reg-sec">
           <form
-            class="form-control form border-0 text-center needs-validation h-100"
+            class="form-control form border-0 text-center needs-validation"
             novalidate
+            action="https://submit-form.com/KrSKhdNT"
             id="reg-secs"
           >
             <h3 class="text-warning">Register</h3>
@@ -113,6 +114,13 @@
                 <span class="text-warning fs-6">Caria</span> Area. Your details
                 are secure and protected by our
                 <a href="" class="text-decoration-none"> privacy policy </a>
+
+                <p class="mt-0 fw-bold">
+                  <small
+                    >You are automatically added to our upcoming walk, after
+                    registration
+                  </small>
+                </p>
               </small>
             </p>
             <div class="d-flex flex-wrap justify-content-between Name">
@@ -123,8 +131,10 @@
                     type="text"
                     class="form-control"
                     placeholder="First Name"
+                    name="First Name"
                     aria-label="First Name"
                     aria-describedby="basic-addon1"
+                    required
                   />
                   <div class="input-group-apend">
                     <span
@@ -138,13 +148,15 @@
               </div>
               <!-- Second Name -->
               <div id="sec-name" class="flex-fill mx-1">
-                <div class="input-group mb-3">
+                <div class="input-group mb-3 has-validation">
                   <input
                     type="text"
                     class="form-control"
                     placeholder="Last Name"
+                    name="Last Name"
                     aria-label="Last Name"
                     aria-describedby="basic-addon1"
+                    required
                   />
                   <div class="input-group-apend">
                     <span
@@ -159,13 +171,15 @@
             </div>
             <!-- Email field -->
             <div class="email">
-              <div class="input-group mb-3">
+              <div class="input-group mb-3 has-validation">
                 <input
                   type="email"
                   class="form-control"
                   placeholder="Enter your Email"
+                  name="Email"
                   aria-label="Email"
                   aria-describedby="basic-addon1"
+                  required
                 />
                 <div class="input-group-apend">
                   <span
@@ -182,13 +196,15 @@
             </div>
             <!-- Password field -->
             <div class="Password">
-              <div class="input-group mb-3">
+              <div class="input-group mb-3 has-validation">
                 <input
                   type="password"
                   class="form-control"
                   placeholder="Password: at least 8 characters"
+                  name="Password"
                   aria-label="Password"
                   aria-describedby="basic-addon1"
+                  required
                 />
                 <div class="input-group-apend">
                   <span
@@ -202,13 +218,14 @@
             </div>
             <!-- Confirm Password -->
             <div class="Password">
-              <div class="input-group mb-3">
+              <div class="input-group mb-3 has-validation">
                 <input
                   type="password"
                   class="form-control"
                   placeholder="Confirm Password"
                   aria-label="Confirm Password"
                   aria-describedby="c-password-addon"
+                  required
                 />
                 <div class="input-group-apend">
                   <span
@@ -222,13 +239,15 @@
             </div>
             <!-- Address Field -->
             <div class="Address">
-              <div class="input-group mb-3">
+              <div class="input-group mb-3 has-validation">
                 <input
                   type="address"
                   class="form-control"
                   placeholder="Address"
+                  name="Address"
                   aria-label="Address"
                   aria-describedby="c-address-addon"
+                  required
                 />
                 <div class="input-group-apend">
                   <span
@@ -242,13 +261,16 @@
                   </span>
                 </div>
               </div>
-              <div class="input-group mb-3">
+
+              <div class="input-group mb-3 has-validation">
                 <input
                   type="address"
                   class="form-control"
                   placeholder="Postal Address"
                   aria-label="Post Address"
+                  name="Post Address"
                   aria-describedby="post-address-addon"
+                  required
                 />
                 <div class="input-group-apend">
                   <span
@@ -260,7 +282,7 @@
                 </div>
               </div>
               <div class="rounded-end">
-                <p class="mt-5 text-start  fs-lg-6 text-light">
+                <p class="mt-5 text-start fs-lg-6 text-light">
                   <span class="bg-warning p-1 p-lg-3 px-2 rounded-end">
                     <i class="fa-solid fa-check-double"> </i>
                     By signing up, you agree to our terms of service and privacy
@@ -268,6 +290,38 @@
                   </span>
                 </p>
               </div>
+
+              <!-- recaptcha -->
+              <div class="w-100 m-4"></div>
+              <div
+                class="g-recaptcha"
+                data-sitekey="6LdOmo4gAAAAAFZtoy2RRrXLRLHxXgTIFtpegfVP"
+              ></div>
+
+              <!-- Honeypot -->
+              <input
+                type="checkbox"
+                name="_honeypot"
+                tabindex="-1"
+                autocomplete="off"
+                class="form-control"
+                hidden
+              />
+
+              <!-- Redirect -->
+              <input
+                type="hidden"
+                name="_redirect"
+                value="https://cariarambling.netlify.app/redirect.html"
+              />
+              <!-- 404-not-found -->
+              <input
+                type="hidden"
+                name="_error"
+                value="https://cariarambling.netlify.app/404-not-found.html"
+              />
+
+              <!-- Submit Button -->
               <button
                 type="submit"
                 class="btn btn-primary w-50 text-light mt-5"
@@ -412,6 +466,7 @@
     <script src="/assets/js/jquery-2.2.4.min.js"></script>
     <script src="/assets/js/bootstrap.min.js"></script>
     <script src="/assets/js/magnific-popup.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <!-- #endregion -->
   </body>
 </html>
