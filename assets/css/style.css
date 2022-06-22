@@ -12698,6 +12698,19 @@ html {
   }
 }
 
+#redirect-body body, #redirect-body html {
+  margin: 0;
+  padding: 0;
+}
+#redirect-body .main-page {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+  font-size: larger;
+  font-weight: 500;
+}
+
 /*!
  * Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)

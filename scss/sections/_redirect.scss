@@ -1,0 +1,16 @@
+
+#redirect-body{
+  body,html{
+    margin: 0;
+    padding: 0;
+  }
+
+  .main-page{
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%,-30%);
+    font-size: larger;
+    font-weight: 500;
+  }
+}

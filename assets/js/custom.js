@@ -29,3 +29,9 @@ document.addEventListener("scroll", debounce(storeScroll), { passive: true });
 // Update scroll position for first time
 storeScroll();
 
+var timeleft = 15;
+var downloadTimer = setInterval(function () {
+  timeleft--;
+  document.getElementById("countdowntimer").textContent = timeleft;
+  if (timeleft <= 0) clearInterval(downloadTimer);
+}, 1000);
