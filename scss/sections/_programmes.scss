@@ -1,5 +1,5 @@
 @use "../components/mixins" as *;
-#program {  
+#program {
   margin-top: 5rem;
 
   a {
@@ -19,7 +19,6 @@
     @include blurglass-gold;
   }
   .calendar {
-   
     border: 1px solid rgba(209, 213, 219, 0.3);
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
     perspective: 1000;
@@ -104,14 +103,14 @@
     transform: rotateY(180deg);
   }
 
-  @media screen and (max-width:768px) {
-    iframe{
+  @media screen and (max-width: 768px) {
+    iframe {
       max-height: 30vh;
     }
   }
 
-  @media screen and (min-width:768px) {
-    iframe{
+  @media screen and (min-width: 768px) {
+    iframe {
       max-height: 50vh;
     }
   }
