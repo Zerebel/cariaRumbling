@@ -1,0 +1,33 @@
+@use "../components/mixins" as *;
+
+.about-page {
+  .top-page {
+    .faq-img {
+      .gradient {
+        @include gradient;
+      }
+      position: relative;
+      @media (hover: hover) {
+        h1 {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          @include blurglass-low;
+          border-radius: 1.1rem;
+        }
+      }
+
+      @media (hover: none) {
+        h1 {
+          position: absolute;
+          top: 60%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          @include blurglass-low;
+          border-radius: 1.1rem;
+        }
+      }
+    }
+  }
+}

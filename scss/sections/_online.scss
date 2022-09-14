@@ -1,0 +1,48 @@
+@use '../components/mixins' as *;
+html{
+    scroll-padding:40vh;
+    user-select: none;
+}
+.online-page {
+
+  .top-page {
+    .faq-img {
+      .gradient {
+        @include gradient;
+      }
+      position: relative;
+      @media (hover: hover) {
+        h1 {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          @include blurglass-low;
+          border-radius: 1.1rem;
+        }
+      }
+
+      @media (hover: none) {
+        h1 {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          @include blurglass-low;
+          border-radius: 1.1rem;
+        }
+      }
+    }
+  }
+    .booking-form{
+      @include blurglass-low;
+      border-radius: 0;
+    }
+  
+  .card{
+
+    img{
+      max-height: 20vh;
+    }
+  }
+}

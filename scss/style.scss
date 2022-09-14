@@ -1,22 +1,27 @@
-
-@use 'custom';
-
-
+@use "custom";
 
 //Components import
-@use 'components/animation';
-@use 'components/buttons';
-@use 'components/mixins';
-@use 'components/typography';
+@use "components/animation";
+@use "components/buttons";
+@use "components/mixins";
+@use "components/typography";
 
 //Sections import
-@use 'sections/blog';
-@use 'sections/faq';
-@use 'sections/footer';
-@use 'sections/intro-section';
-@use 'sections/navbar';
-@use 'sections/services';
-@use 'sections/testimonial';
-@use 'sections/carousel';
+@use "sections/blog";
+@use "sections/faq";
+@use "sections/footer";
+@use "sections/intro-section";
+@use "sections/navbar";
+@use "sections/coaches";
+@use "sections/testimonial";
+@use "sections/carousel";
+@use "sections/insights";
+@use "sections/register";
+@use "sections/programmes";
+@use "sections/online";
+@use "sections/about";
+@use "sections/redirect";
+@use "sections/the-404-page";
+
 //awesome import
-@use 'fontawesome';
+@use "fontawesome";

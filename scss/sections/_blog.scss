@@ -1,0 +1,149 @@
+@use "../components/mixins" as *;
+.top-page {
+  .head-img {
+    .gradient {
+      @include gradient;
+    }
+    position: relative;
+    @media (hover: hover) {
+      h1 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        letter-spacing: 2rem;
+        @include blurglass-low;
+      }
+    }
+  }
+}
+@media (hover: none) {
+  .head-img {
+    position: relative;
+    h1 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      @include blurglass-low;
+    }
+  }
+}
+body {
+  background-color: #ffffffbb;
+
+  hr {
+    height: 0.3rem;
+    @include hr-line;
+  }
+}
+article {
+  .blog-area {
+    ul {
+      padding: 0;
+      display: inline-flex;
+      gap: 1.3rem;
+
+      li {
+        list-style: none;
+        a {
+          text-decoration: none;
+          color: #636060;
+        }
+      }
+    }
+    .blog-item-img {
+      position: relative;
+      .blog-item-date {
+        position: absolute;
+        @include blurglass-low;
+        display: block;
+        width: max-content;
+        bottom: -1rem;
+        left: 1.5rem;
+        padding: 0.8rem 1.7rem;
+        border-radius: 0.7rem;
+
+        a {
+          font-weight: 700;
+          font-size: 1.6rem;
+          color: white;
+          text-decoration: none;
+
+          h4 {
+            padding-bottom: 0;
+            margin: 0;
+          }
+          p {
+            padding-top: 0;
+            margin-top: 0;
+            color: gold;
+          }
+        }
+      }
+    }
+  }
+}
+
+#main-container {
+  #blog-left {
+    @media (hover: hover) {
+      padding-left: 4em;
+    }
+  }
+
+  .newsletter-section {
+    #card-recent {
+      @media (hover: hover) {
+        &:hover {
+          a {
+            color: goldenrod;
+            text-align: center;
+            transition: all 0.3s ease-in-out;
+          }
+        }
+      }
+      a {
+        text-decoration: none;
+        color: #000;
+      }
+      .card-text {
+        i {
+          color: goldenrod;
+        }
+        .card-foot {
+          padding-left: 0.17rem;
+          font-size: 0.8rem;
+        }
+      }
+    }
+    #blog-search-button {
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+
+  .tag-cloud {
+    .tag-group {
+      ul {
+        li {
+          background-color: rgba(233, 185, 12, 0.942);
+          border-radius: 5px;
+          &:hover {
+            background-color: rgb(82, 76, 3);
+          }
+          a {
+            text-decoration: none;
+            color: #fff;
+            @media (hover: hover) {
+              &:hover {
+                font-weight: bolder;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

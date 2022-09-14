@@ -43,9 +43,11 @@
     }
   }
 
-  @media screen and (max-width:992px) {
-    .card{
-      display: none;
+  @media screen and (max-width: 992px) {
+    .carol {
+      .card {
+        display: none;
+      }
     }
   }
   .navbar-brand {
@@ -90,16 +92,13 @@
     display: none;
     z-index: -1;
   }
-  #search-but {
-    border: none;
-    padding: 0;
-    margin: 0;
-    z-index: 990;
-    background-color: inherit;
-    color: inherit;
+  .input-group {
+    .search-btn {
+      color: #fff;
+    }
   }
   .navbar-collapse {
-    @include blurglass-high;
+    @include blurglass-lower;
     position: absolute;
     top: 100%;
     padding: 0.6rem;
@@ -107,6 +106,20 @@
     z-index: 9999;
     cursor: pointer;
     border-radius: 0px 0 0 12px;
+
+    .nav-item {
+      font-size: 1.2rem;
+
+      .form-control {
+        border-color: 0.5px solid goldenrod;
+      }
+      .form-control:focus {
+        border-color: none;
+        background-color: #fff;
+        box-shadow: none;
+        border: none;
+      }
+    }
   }
 
   // Button for toggling the navbar when in its collapsed state
@@ -116,8 +129,7 @@
     background-color: transparent; // remove default button style
     border: none; // remove default button style
     // @include border-radius(var(--#{$prefix}navbar-toggler-border-radius));
-    // @include transition(var(--#{$prefix}navbar-toggler-transition));
-
+    // @include transition(var(--#{$prefix}navbar-toggler-transition))
     &:hover {
       text-decoration: none;
     }
@@ -131,8 +143,8 @@
 
   .navbar-toggler-icon {
     display: inline-block;
-    width: 1.3em;
-    height: 1.43em;
+    max-width: 1.3em;
+    max-height: 1.43em;
     vertical-align: middle;
     border-radius: 0;
     background-repeat: no-repeat;

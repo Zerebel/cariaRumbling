@@ -1,0 +1,35 @@
+@use "../components/mixins" as *;
+.insights {
+  @include blurglass-gold;
+  border-radius: 0;
+
+  .card-footer {
+    background-color: white;
+  }
+  .card-text {
+    background-color: #fff;
+  }
+
+  p {
+    @media screen and(max-width:792px) {
+      text-align: center;
+    }
+    @include blurglass-medium;
+  }
+
+  a {
+    .btn{
+      text-decoration: none;
+    color: #fff;
+    }
+    
+  }
+
+  .card {
+    max-width: 33.75rem;
+    img {
+      max-width: 100%;
+      object-fit: cover;
+    }
+  }
+}

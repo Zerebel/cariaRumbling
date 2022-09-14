@@ -1,0 +1,123 @@
+@use "../components/mixins" as *;
+#program {
+  margin-top: 5rem;
+
+  a {
+    text-decoration: none;
+  }
+
+  body {
+    background: #dfebed;
+  }
+
+  .container {
+    margin-top: 4rem !important ;
+    max-width: 95%;
+  }
+
+  .card {
+    @include blurglass-gold;
+  }
+  .calendar {
+    border: 1px solid rgba(209, 213, 219, 0.3);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+    perspective: 1000;
+    transition: 0.9s;
+    transform-style: preserve-3d;
+    width: 100%;
+  }
+
+  /* Front - Calendar */
+  .front {
+    transform: rotateY(0deg);
+  }
+
+  .table {
+    tr {
+      cursor: default;
+      td {
+        &:not(.last-month):hover {
+          cursor: pointer;
+          font-weight: 600;
+          transition: all 0.4s ease-in-out;
+        }
+      }
+    }
+  }
+
+  .current-date h1 {
+    color: #000;
+    font-size: 1.4em;
+    font-weight: 300;
+  }
+
+  .week-days {
+    color: #aaa;
+  }
+
+  .weeks {
+    color: rgb(137, 109, 8);
+  }
+
+  .weeks {
+    tr {
+      font-size: 1.2em;
+      font-weight: 300;
+      td {
+        @media screen and (min-width: 768px) {
+          padding: 1.5rem;
+        }
+      }
+    }
+  }
+
+  .last-month {
+    opacity: 0.3;
+  }
+
+  .weeks {
+    .active {
+      clip-path: circle();
+      color: #fff;
+      background: rgb(149, 139, 1);
+      &:hover {
+        background: gold;
+        color: #fff;
+      }
+    }
+  }
+
+  .weeks :hover {
+    cursor: pointer;
+    tr {
+      td {
+        cursor: pointer;
+      }
+    }
+  }
+
+  /* Back - Event form */
+
+  .back {
+    height: 100%;
+    transform: rotateY(180deg);
+  }
+
+  @media screen and (max-width: 768px) {
+    iframe {
+      max-height: 30vh;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    iframe {
+      max-height: 50vh;
+    }
+  }
+
+  /* Flip animation */
+
+  .flip {
+    transform: rotateY(180deg);
+  }
+}
